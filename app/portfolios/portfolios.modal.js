@@ -1,19 +1,19 @@
 (function () {
   "use strict";
 
-  angular.module('productRoute', [
+  angular.module('portfoliosRoute', [
     'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/products', {
-        templateUrl: 'products/views/products.html',
-        controller: 'ProductsController as prodCtrl'
+      .when('/', {
+        templateUrl: 'app/portfolios/views/main.html'
+        // controller: 'ProductsController as prodCtrl'
       })
-      .when('/fullview/:productid', {
-        templateUrl: 'products/views/fullview.html',
-        controller: 'ProductsController as prodCtrl'
-      })
+      // .when('/fullview/:productid', {
+      //   templateUrl: 'products/views/fullview.html',
+      //   controller: 'ProductsController as prodCtrl'
+      // })
   });
 
 })();
