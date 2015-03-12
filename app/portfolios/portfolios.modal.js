@@ -10,7 +10,7 @@
         templateUrl: 'app/portfolios/views/main.html'
         // controller: 'ProductsController as prodCtrl'
       })
-      .when('/fullview', {
+      .when('/portfolio', {
         templateUrl: 'app/portfolios/views/portfolio.html'
         // controller: 'ProductsController as prodCtrl' add to end of url extension /:productid
       })
