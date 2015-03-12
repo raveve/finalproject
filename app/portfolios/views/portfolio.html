@@ -72,7 +72,9 @@
           <label for="">Review</label>
           <textarea class="form-control" rows="3" ng-model="newReview.review" required></textarea>
         </div>
-        <button type="submit" class="btn btn-default pull-right">Submit Review</button>
+        <button type="submit" class="btn btn-default pull-right" ng-click="showReviewForm = !showReviewForm">
+          Submit Review
+        </button>
     </div>
   </div>
   <div class="row">
