@@ -1,37 +1,37 @@
 (function () {
   "use strict";
-  angular.module('peddlerApp')
+  angular.module('shampoodleApp')
     .controller('AdminController', function (AdminService, $scope, $location, $routeParams) {
         var adminCtrl = this;
 
-        adminCtrl.product = [];
+        adminCtrl.profile = [];
 
-        AdminService.getProducts().success(function (products) {
-          adminCtrl.products = products;
+        AdminService.getGroomers().success(function (profiles) {
+          adminCtrl.profiles = profiles;
         });
 
-        AdminService.getProduct($routeParams.productid).then(function (response) {
-         adminCtrl.product = response.data;
-         console.log($routeParams.productid);
+        AdminService.getGroomer($routeParams.profileid).then(function (response) {
+         adminCtrl.profile = response.data;
+         console.log($routeParams.profileid);
        });
 
-        adminCtrl.addProduct = function (newProduct) {
-          AdminService.addProduct({
-            name:newProduct.name,
-            url:newProduct.url,
-            details:newProduct.details,
-            price:newProduct.price,
+        adminCtrl.addProfile = function (newProfile) {
+          AdminService.addProfile({
+            name:newProfile.name,
+            url:newProfile.url,
+            details:newProfile.details,
+            price:newProfile.price,
             reviews: []
           });
-          $scope.newProduct = {};
+          $scope.newProfile = {};
         };
 
-        adminCtrl.deleteProduct = function (id) {
-          AdminService.deleteProduct(id);
+        adminCtrl.deleteGroomer = function (id) {
+          AdminService.deleteGroomer(id);
         };
 
-        adminCtrl.editProduct = function (product) {
-         AdminService.editProduct(product);
+        adminCtrl.editGroomer = function (profile) {
+         AdminService.editGroomer(profile);
          $location.path('/admin');
        };
 

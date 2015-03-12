@@ -1,37 +1,37 @@
 (function () {
   "use strict";
 
-  angular.module('peddlerApp')
+  angular.module('shampoodleApp')
     .factory('AdminService', function ($http, $rootScope) {
 
-      var url = "http://tiy-fee-rest.herokuapp.com/collections/peddlerapp";
+      var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
 
-      var getBikeProducts = function () {
+      var getGroomerProfiles = function () {
         return $http.get(url);
       }
 
-      var getBikeProduct = function (id) {
+      var getGroomerProfile = function (id) {
         return $http.get(url + '/' + id);
       }
 
-      var addBikeProduct = function (product) {
-        $http.post(url, product);
+      var addGroomerProfile = function (profile) {
+        $http.post(url, profile);
       }
 
-      var deleteBikeProduct = function(id) {
+      var deleteGroomerProfile = function(id) {
         $http.delete(url + '/' + id);
       }
 
-      var editBikeProduct = function(product) {
-        $http.put(url + '/' + product._id, product);
+      var editGroomerProfile = function(profile) {
+        $http.put(url + '/' + profile._id, profile);
       }
 
       return {
-        getProducts: getBikeProducts,
-        getProduct: getBikeProduct,
-        addProduct: addBikeProduct,
-        deleteProduct: deleteBikeProduct,
-        editProduct: editBikeProduct
+        getGroomers: getGroomerProfiles,
+        getGroomer: getGroomerProfile,
+        addGroomer: addGroomerProfile,
+        deleteGroomer: deleteGroomerProfile,
+        editGroomer: editGroomerProfile
       };
     });
 

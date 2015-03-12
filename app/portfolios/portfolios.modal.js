@@ -7,15 +7,16 @@
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/portfolios/views/main.html'
-        // controller: 'ProductsController as prodCtrl'
+        templateUrl: 'app/portfolios/views/main.html',
+        controller: 'PortfoliosController as portCtrl'
       })
-      .when('/portfolio', {
-        templateUrl: 'app/portfolios/views/portfolio.html'
-        // controller: 'ProductsController as prodCtrl' add to end of url extension /:productid
+      .when('/portfolio/:portfolioid', {
+        templateUrl: 'app/portfolios/views/portfolio.html',
+        controller: 'PortfoliosController as portCtrl'
       })
       .when('/list', {
-        templateUrl: 'app/portfolios/views/list.html'
+        templateUrl: 'app/portfolios/views/list.html',
+        controller: 'PortfoliosController as portCtrl'
       })
   });
 
