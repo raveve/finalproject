@@ -20,6 +20,7 @@ $image-text: #FFFFFF;
 }
 
 nav{
+  height: 20vh;
   a {
     margin: 2%;
     color: $image-text;
@@ -33,6 +34,22 @@ nav{
   ul {
     margin-left: 20%;
   }
+}
+
+.home-logo {
+  margin-top: 20vh;
+}
+
+.home-search {
+  margin-top: 30vh;
+}
+
+.home-about {
+  margin-top: 20vh;
+}
+
+.home-create {
+  margin-top: 10vh;
 }
 
 body {

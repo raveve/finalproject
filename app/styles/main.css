@@ -15,16 +15,30 @@
   -o-background-size: cover;
   background-size: cover; }
 
-nav a {
-  margin: 2%;
-  color: #FFFFFF; }
-nav li {
-  list-style: none;
-  display: inline;
-  font-size: 32px;
-  border-left: 2px solid; }
-nav ul {
-  margin-left: 20%; }
+nav {
+  height: 20vh; }
+  nav a {
+    margin: 2%;
+    color: #FFFFFF; }
+  nav li {
+    list-style: none;
+    display: inline;
+    font-size: 32px;
+    border-left: 2px solid; }
+  nav ul {
+    margin-left: 20%; }
+
+.home-logo {
+  margin-top: 20vh; }
+
+.home-search {
+  margin-top: 30vh; }
+
+.home-about {
+  margin-top: 20vh; }
+
+.home-create {
+  margin-top: 10vh; }
 
 body {
   background-image: url("../images/lightpaperfibers_@2X.png"); }

@@ -10,10 +10,13 @@
         templateUrl: 'app/portfolios/views/main.html'
         // controller: 'ProductsController as prodCtrl'
       })
-      // .when('/fullview/:productid', {
-      //   templateUrl: 'products/views/fullview.html',
-      //   controller: 'ProductsController as prodCtrl'
-      // })
+      .when('/fullview', {
+        templateUrl: 'app/portfolios/views/portfolio.html'
+        // controller: 'ProductsController as prodCtrl' add to end of url extension /:productid
+      })
+      .when('/list', {
+        templateUrl: 'app/portfolios/views/list.html'
+      })
   });
 
 })();
