@@ -44,7 +44,7 @@
 
         adminCtrl.editGroomer = function (profile) {
          AdminService.editGroomer(profile);
-         $location.path('/admin');
+         $location.path('/adminlist');
        };
 
     });
