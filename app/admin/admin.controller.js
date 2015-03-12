@@ -12,15 +12,27 @@
 
         AdminService.getGroomer($routeParams.profileid).then(function (response) {
          adminCtrl.profile = response.data;
-         console.log($routeParams.profileid);
        });
 
-        adminCtrl.addProfile = function (newProfile) {
-          AdminService.addProfile({
+        adminCtrl.addGroomer = function (newProfile) {
+          AdminService.addGroomer({
             name:newProfile.name,
-            url:newProfile.url,
-            details:newProfile.details,
-            price:newProfile.price,
+            email:newProfile.email,
+            company:newProfile.company,
+            companyURL:newProfile.companyURL,
+            address:newProfile.address,
+            city:newProfile.city,
+            state:newProfile.state,
+            zip:newProfile.zip,
+            phone:newProfile.phone,
+            mainimg:newProfile.mainimg,
+            bio:newProfile.bio,
+            portimg1:newProfile.portimg1,
+            portimg2:newProfile.portimg2,
+            portimg3:newProfile.portimg3,
+            portimg4:newProfile.portimg4,
+            portimg5:newProfile.portimg5,
+            portimg6:newProfile.portimg6,
             reviews: []
           });
           $scope.newProfile = {};
