@@ -4,7 +4,8 @@
   angular.module('shampoodleApp', [
     'ngRoute',
     'portfoliosRoute',
-    'adminRoute'
+    'adminRoute',
+    'slick'
   ])
   .config(function ($routeProvider) {
     $routeProvider
