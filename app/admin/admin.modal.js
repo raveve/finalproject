@@ -6,18 +6,14 @@
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/admin', {
-        templateUrl: 'admin/views/admin.html',
-        controller: 'AdminController as adminCtrl'
+      .when('/newprofile', {
+        templateUrl: 'app/admin/views/portfolio-setup.html'
+        // controller: 'AdminController as adminCtrl'
       })
-      .when('/new', {
-        templateUrl: 'admin/views/new.html',
-        controller: 'AdminController as adminCtrl'
-      })
-      .when('/edit/:productid', {
-        templateUrl: 'admin/views/edit.html',
-        controller: 'AdminController as adminCtrl'
-      })
+      // .when('/edit/:productid', {
+      //   templateUrl: 'admin/views/edit.html',
+      //   controller: 'AdminController as adminCtrl'
+      // })
   });
 
 })();

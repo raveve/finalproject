@@ -3,7 +3,8 @@
 
   angular.module('peddlerApp', [
     'ngRoute',
-    'portfoliosRoute'
+    'portfoliosRoute',
+    'adminRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
