@@ -1,5 +1,83 @@
 <div class="container-fluid">
 <div class="row">
-
+  <nav class="col-md-4 col-md-offset-8">
+    <ul>
+      <a href="">
+        <li>Map</li>
+      </a>
+      <a href="#/list">
+        <li>Search</li>
+      </a>
+      <a href="">
+        <li>Sign In</li>
+      </a>
+    </ul>
+  </nav>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h3 class="text-center">Portfolio Information</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form ng-submit="adminCtrl.addGroomer(newProfile)">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input class="form-control" type="text" ng-model="newProfile.name" required>
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input class="form-control" type="text" ng-model="newProfile.email" required>
+        </div>
+        <div class="form-group">
+          <label for="">Company</label>
+          <input class="form-control" type="text" ng-model="newProfile.company" required>
+        </div>
+        <div class="form-group">
+          <label for="">Company URL</label>
+          <input class="form-control" type="text" ng-model="newProfile.companyURL" required>
+        </div>
+        <div class="form-group">
+          <label for="">Company Address</label>
+          <input class="form-control" type="text" ng-model="newProfile.address" required>
+        </div>
+        <div class="form-group">
+          <label for="">Company City</label>
+          <input class="form-control" type="text" ng-model="newProfile.city" required>
+        </div>
+        <div class="form-group">
+          <label for="">Company State</label>
+          <input class="form-control" type="text" ng-model="newProfile.state" required>
+        </div>
+        <div class="form-group">
+          <label for="">Company Zip</label>
+          <input class="form-control" type="text" ng-model="newProfile.zip" required>
+        </div>
+        <div class="form-group">
+          <label for="">Phone</label>
+          <input class="form-control" type="text" ng-model="newProfile.phone" required>
+        </div>
+        <div class="form-group">
+          <label for="">Profile Image URL</label>
+          <input class="form-control" type="text" ng-model="newProfile.mainimg" required>
+        </div>
+        <div class="form-group">
+          <label for="">Bio</label>
+          <textarea class="form-control" rows="3" ng-model="newProfile.bio" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="">Portfolio Image URLs</label>
+          <input class="form-control" type="text" ng-model="newProfile.portimg1" required>
+          <input class="form-control" type="text" ng-model="newProfile.portimg2" required>
+          <input class="form-control" type="text" ng-model="newProfile.portimg3" required>
+          <input class="form-control" type="text" ng-model="newProfile.portimg4" required>
+          <input class="form-control" type="text" ng-model="newProfile.portimg5">
+          <input class="form-control" type="text" ng-model="newProfile.portimg6">
+        </div>
+        <button type="submit" class="btn btn-default pull-right">Submit Portfolio</button>
+      </form>
+    </div>
+  </div>
 </div>
 </div>

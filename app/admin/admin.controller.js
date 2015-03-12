@@ -1,38 +1,50 @@
 (function () {
   "use strict";
-  angular.module('peddlerApp')
+  angular.module('shampoodleApp')
     .controller('AdminController', function (AdminService, $scope, $location, $routeParams) {
         var adminCtrl = this;
 
-        adminCtrl.product = [];
+        adminCtrl.profile = [];
 
-        AdminService.getProducts().success(function (products) {
-          adminCtrl.products = products;
+        AdminService.getGroomers().success(function (profiles) {
+          adminCtrl.profiles = profiles;
         });
 
-        AdminService.getProduct($routeParams.productid).then(function (response) {
-         adminCtrl.product = response.data;
-         console.log($routeParams.productid);
+        AdminService.getGroomer($routeParams.profileid).then(function (response) {
+         adminCtrl.profile = response.data;
        });
 
-        adminCtrl.addProduct = function (newProduct) {
-          AdminService.addProduct({
-            name:newProduct.name,
-            url:newProduct.url,
-            details:newProduct.details,
-            price:newProduct.price,
+        adminCtrl.addGroomer = function (newProfile) {
+          AdminService.addGroomer({
+            name:newProfile.name,
+            email:newProfile.email,
+            company:newProfile.company,
+            companyURL:newProfile.companyURL,
+            address:newProfile.address,
+            city:newProfile.city,
+            state:newProfile.state,
+            zip:newProfile.zip,
+            phone:newProfile.phone,
+            mainimg:newProfile.mainimg,
+            bio:newProfile.bio,
+            portimg1:newProfile.portimg1,
+            portimg2:newProfile.portimg2,
+            portimg3:newProfile.portimg3,
+            portimg4:newProfile.portimg4,
+            portimg5:newProfile.portimg5,
+            portimg6:newProfile.portimg6,
             reviews: []
           });
-          $scope.newProduct = {};
+          $scope.newProfile = {};
         };
 
-        adminCtrl.deleteProduct = function (id) {
-          AdminService.deleteProduct(id);
+        adminCtrl.deleteGroomer = function (id) {
+          AdminService.deleteGroomer(id);
         };
 
-        adminCtrl.editProduct = function (product) {
-         AdminService.editProduct(product);
-         $location.path('/admin');
+        adminCtrl.editGroomer = function (profile) {
+         AdminService.editGroomer(profile);
+         $location.path('/adminlist');
        };
 
     });

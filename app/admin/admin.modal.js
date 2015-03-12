@@ -6,16 +6,16 @@
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/admin', {
-        templateUrl: 'admin/views/admin.html',
+      .when('/newprofile', {
+        templateUrl: 'app/admin/views/portfolio-setup.html',
         controller: 'AdminController as adminCtrl'
       })
-      .when('/new', {
-        templateUrl: 'admin/views/new.html',
+      .when('/adminlist', {
+        templateUrl: 'app/admin/views/admin-list.html',
         controller: 'AdminController as adminCtrl'
       })
-      .when('/edit/:productid', {
-        templateUrl: 'admin/views/edit.html',
+      .when('/edit/:profileid', {
+        templateUrl: 'app/admin/views/account-settings.html',
         controller: 'AdminController as adminCtrl'
       })
   });

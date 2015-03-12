@@ -1,31 +1,26 @@
 (function () {
   "use strict";
-  angular.module('peddlerApp')
-    .controller('ProductsController', function (ProductsService, CartService, $scope, $location, $routeParams) {
-        var prodCtrl = this; // the scope of our controller is 'this'
+  angular.module('shampoodleApp')
+    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams) {
+        var portCtrl = this; // the scope of our controller is 'this'
 
-        ProductsService.getProducts().success(function (products) {
-          console.log(products);
-          prodCtrl.products = products;
+        PortfoliosService.getGroomers().success(function (profiles) {
+          portCtrl.profiles = profiles;
         });
 
-        ProductsService.getProduct($routeParams.productid).then(function (response) {
-         prodCtrl.product = response.data;
-         console.log($routeParams.productid);
+        PortfoliosService.getGroomer($routeParams.portfolioid).then(function (response) {
+          console.log(response);
+         portCtrl.profile = response.data;
         });
 
-        prodCtrl.reviews = ProductsService.getReviews();
+        portCtrl.reviews = PortfoliosService.getReviews();
 
-        prodCtrl.go = function (index) {
+        portCtrl.go = function (index) {
           $location.path('/fullview/' + index);
         };
 
-        prodCtrl.buyItem = function (product) {
-          CartService.buyItem(product);
-        };
-
-        prodCtrl.addReview = function (newReview, product) {
-          ProductsService.addReview(newReview, product);
+        portCtrl.addReview = function (newReview, profile) {
+          PortfoliosService.addReview(newReview, profile);
           $scope.newReview = {};
         };
 

@@ -1,9 +1,10 @@
 (function () {
   "use strict";
 
-  angular.module('peddlerApp', [
+  angular.module('shampoodleApp', [
     'ngRoute',
-    'portfoliosRoute'
+    'portfoliosRoute',
+    'adminRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -8,12 +8,15 @@
     $routeProvider
       .when('/', {
         templateUrl: 'app/portfolios/views/main.html'
-        // controller: 'ProductsController as prodCtrl'
       })
-      // .when('/fullview/:productid', {
-      //   templateUrl: 'products/views/fullview.html',
-      //   controller: 'ProductsController as prodCtrl'
-      // })
+      .when('/portfolio/:portfolioid', {
+        templateUrl: 'app/portfolios/views/portfolio.html',
+        controller: 'PortfoliosController as portCtrl'
+      })
+      .when('/list', {
+        templateUrl: 'app/portfolios/views/list.html',
+        controller: 'PortfoliosController as portCtrl'
+      })
   });
 
 })();
