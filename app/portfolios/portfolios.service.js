@@ -4,6 +4,8 @@
   angular.module('shampoodleApp')
     .factory('PortfoliosService', function ($http, $rootScope) {
 
+      var search;
+
       var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
 
       var getGroomerProfiles = function () {
@@ -25,11 +27,21 @@
         return $http.get(reviews);
       }
 
+      // var search = function (searchTerm) {
+      //   search = searchTerm;
+      // }
+      //
+      // var getSearch = function() {
+      //   return search;
+      // }
+
       return {
         getGroomers: getGroomerProfiles,
         getGroomer: getGroomerProfile,
         addReview: addNewReview,
         getReviews: getGroomerReviews
+        // search: search,
+        // getSearch: getSearch
       };
     });
 

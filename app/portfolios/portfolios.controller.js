@@ -1,8 +1,10 @@
 (function () {
   "use strict";
   angular.module('shampoodleApp')
-    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams) {
+    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams, $filter) {
         var portCtrl = this; // the scope of our controller is 'this'
+        $scope.searchTerm = $routeParams.term;
+        // portCtrl.search = PortfoliosService.getSearch();
 
         PortfoliosService.getGroomers().success(function (profiles) {
           portCtrl.profiles = profiles;
@@ -24,15 +26,13 @@
           $scope.newReview = {};
         };
 
-    });
+        portCtrl.homeSearch = function (searchTerm) {
+          // event.preventDefault();
+          // $scope.searchTerm = searchTerm;
+          // PortfoliosService.search(searchTerm);
+          $location.path('/list/' + searchTerm);
+        };
 
-//   $('.variable-width').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   centerMode: true,
-//   variableWidth: true
-// });
+    });
 
 })();
