@@ -15,14 +15,16 @@
   </nav>
   </div>
   <div class="row">
-    <div class="col-md-8 col-md-offset-2 portfolio">
+    <div class="col-md-3 col-md-offset-2 portfolio">
       <img src="{{portCtrl.profile.mainimg}}">
+      <p><a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
+      <p><a href="mailto:{{portCtrl.profile.email}}">{{portCtrl.profile.email}}</a></p>
+    </div>
+    <div class="col-md-4 portfolio">
       <p>{{portCtrl.profile.name}}</p>
       <p><a href="{{portCtrl.profile.companyURL}}">{{portCtrl.profile.company}}</a></p>
       <p>{{portCtrl.profile.address}}</p>
       <p>{{portCtrl.profile.city}}, {{portCtrl.profile.state}} {{portCtrl.profile.zip}}</p>
-      <p><a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
-      <p><a href="mailto:{{portCtrl.profile.email}}">{{portCtrl.profile.email}}</a></p>
     </div>
   </div>
   <div class="row">
@@ -42,11 +44,13 @@
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <img src="http://placehold.it/175x175">
-      <img src="http://placehold.it/175x175">
-      <img src="http://placehold.it/175x175">
-      <img src="http://placehold.it/175x175">
-      <img src="http://placehold.it/175x175">
+      <slick init-onload="true" dots="true" infinite="false" speed="300" slides-to-show="4" touch-move="false" slides-to-scroll="1">
+        <img src="http://placehold.it/175x175">
+        <img src="http://placehold.it/175x175">
+        <img src="http://placehold.it/175x175">
+        <img src="http://placehold.it/175x175">
+        <img src="http://placehold.it/175x175">
+      </slick>
     </div>
   </div>
   <div class="row">
