@@ -1,20 +1,26 @@
-angular.module('MyApp', [
+(function () {
+  "use strict";
+
+angular.module('shampoodleApp', [
   'ngMessages',
   'ngRoute',
   'ngSanitize',
   'mgcrea.ngStrap',
   'auth',
   'profile',
-  'posts'])
+  'posts',
+  'portfoliosRoute',
+  'adminRoute'
+  ])
   .config(function($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'home/views/home.html'
+      .when('/notfound', {
+        templateUrl: '404.html'
       })
-      .when('/404', {
-        template: '<h1>Sorry, page not found</h1>'
-      })
-      .otherwise({ redirectTo: '/404' });
-
+      .otherwise({
+        redirectTo: '/notfound'
+      });
 
   });
+
+})();
