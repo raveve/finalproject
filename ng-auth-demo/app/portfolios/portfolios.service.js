@@ -23,6 +23,22 @@
 
       var getGroomerReviews = function (reviews) {
         return $http.get(reviews);
+        var value = review.rating;
+        if (value === 1) {
+          return '<i class="fa fa-paw"></i>';
+        }
+        else if (value === 2) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+        else if (value === 3) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+        else if (value === 4) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+        else if (value === 5) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
       }
 
       return {

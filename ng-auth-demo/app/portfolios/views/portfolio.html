@@ -98,6 +98,16 @@
           <input class="form-control" type="text" ng-model="newReview.title" required>
         </div>
         <div class="form-group">
+          <label for="">Paw Rating</label>
+          <select class="form-control" ng-model="newReview.rating" required>
+            <option value="1">1 Paw</option>
+            <option value="2">2 Paws</option>
+            <option value="3">3 Paws</option>
+            <option value="4">4 Paws</option>
+            <option value="5">5 Paws</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="">Review</label>
           <textarea class="form-control" rows="3" ng-model="newReview.review" required></textarea>
         </div>
@@ -109,6 +119,7 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2" ng-repeat="review in portCtrl.profile.reviews">
       <h4>{{review.title}}</h4>
+      <h4>{{review.rating}}</h4>
       <p>{{review.name}}</p>
       <p>{{review.review}}</p>
     </div>

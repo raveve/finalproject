@@ -20,7 +20,6 @@ angular.module('shampoodleApp', [
       .otherwise({
         redirectTo: '/notfound'
       });
-
   });
 
 })();
