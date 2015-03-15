@@ -1,0 +1,205 @@
+/* background: linear-gradient(rgba(64, 64, 64, 0.4), rgba(64, 64, 64, 0.4)), url('/images/EhYKSby.png'); */
+$image-text: #FFFFFF;
+
+@mixin full-images($url) {
+  background: url($url) no-repeat center center fixed;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*******************************
+320PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 320px) {
+  body {
+    background-image: url('../images/lightpaperfibers_@2X.png')
+  }
+
+  .header-img {
+    @include full-images('../images/homepg1920.jpg');
+  }
+
+  .about-img {
+    @include full-images('../images/homemap600.jpg');
+  }
+
+/*   nav{
+  a {
+    color: $image-text;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+} */
+
+  nav a {
+  	position: relative;
+  	display: inline-block;
+  	margin: 15px 25px;
+  	outline: none;
+  	color: #fff;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	letter-spacing: 1px;
+  	font-weight: 400;
+  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  	font-size: 1.35em;
+  }
+
+  nav a:hover,
+  nav a:focus {
+  	outline: none;
+  }
+
+  .cl-effect-14 a {
+  	padding: 0 20px;
+  	height: 45px;
+  	line-height: 45px;
+  }
+
+  .cl-effect-14 a::before,
+  .cl-effect-14 a::after {
+  	position: absolute;
+  	width: 45px;
+  	height: 2px;
+  	background: #fff;
+  	content: '';
+  	opacity: 0.2;
+  	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	transition: all 0.3s;
+  	pointer-events: none;
+  }
+
+  .cl-effect-14 a::before {
+  	top: 0;
+  	left: 0;
+  	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	transform: rotate(90deg);
+  	-webkit-transform-origin: 0 0;
+  	-moz-transform-origin: 0 0;
+  	transform-origin: 0 0;
+  }
+
+  .cl-effect-14 a::after {
+  	right: 0;
+  	bottom: 0;
+  	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	transform: rotate(90deg);
+  	-webkit-transform-origin: 100% 0;
+  	-moz-transform-origin: 100% 0;
+  	transform-origin: 100% 0;
+  }
+
+  .cl-effect-14 a:hover::before,
+  .cl-effect-14 a:hover::after,
+  .cl-effect-14 a:focus::before,
+  .cl-effect-14 a:focus::after {
+  	opacity: 1;
+  }
+
+  .cl-effect-14 a:hover::before,
+  .cl-effect-14 a:focus::before {
+  	left: 50%;
+  	-webkit-transform: rotate(0deg) translateX(-50%);
+  	-moz-transform: rotate(0deg) translateX(-50%);
+  	transform: rotate(0deg) translateX(-50%);
+  }
+
+  .cl-effect-14 a:hover::after,
+  .cl-effect-14 a:focus::after {
+  	right: 50%;
+  	-webkit-transform: rotate(0deg) translateX(50%);
+  	-moz-transform: rotate(0deg) translateX(50%);
+  	transform: rotate(0deg) translateX(50%);
+  }
+
+  .home-logo {
+    margin-top: 20vh;
+    img {
+      width: 80%;
+    }
+  }
+
+  .home-search {
+    margin-top: 30vh;
+  }
+
+  .home-about {
+    margin-top: 15vh;
+  }
+
+  .home-create {
+    margin-top: 5vh;
+  }
+
+  .list-search {
+    margin-top: 10vh;
+  }
+
+  .list-item {
+    margin-top: 10vh;
+    img {
+      display: inline;
+    }
+  }
+
+  .portfolio {
+    margin-top: 15vh;
+  }
+
+  .portfolio-bio {
+    margin-top: 5vh;
+  }
+}
+
+/*******************************
+640PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 640px) {
+  .about-img {
+    @include full-images('../images/homemap800.jpg');
+  }
+
+  .home-logo {
+    img {
+      width: 60%;
+    }
+  }
+
+}
+
+/*******************************
+960PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 960px) {
+  .about-img {
+    @include full-images('../images/homemap1280.jpg');
+  }
+  .home-logo {
+    img {
+      width: 40%;
+    }
+  }
+
+}
+
+/*******************************
+1280PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 1280px) {
+}
+
+/*******************************
+1920PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 1280px) {
+  .about-img {
+    @include full-images('../images/homemap1920.jpg');
+  }
+
+}

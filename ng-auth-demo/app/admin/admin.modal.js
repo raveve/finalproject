@@ -7,15 +7,15 @@
   .config(function ($routeProvider) {
     $routeProvider
       .when('/newprofile', {
-        templateUrl: 'app/admin/views/portfolio-setup.html',
+        templateUrl: 'admin/views/portfolio-setup.html',
         controller: 'AdminController as adminCtrl'
       })
       .when('/adminlist', {
-        templateUrl: 'app/admin/views/admin-list.html',
+        templateUrl: 'admin/views/admin-list.html',
         controller: 'AdminController as adminCtrl'
       })
       .when('/edit/:profileid', {
-        templateUrl: 'app/admin/views/account-settings.html',
+        templateUrl: 'admin/views/account-settings.html',
         controller: 'AdminController as adminCtrl'
       })
   });
