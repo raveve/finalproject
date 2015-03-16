@@ -22,6 +22,7 @@ angular.module('shampoodleApp', [
         redirectTo: '/notfound'
       });
   })
+  
   .constant('_', _);
 
 })();

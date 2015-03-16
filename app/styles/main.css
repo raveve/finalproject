@@ -37,6 +37,8 @@
     text-transform: uppercase;
   }
 } */
+  a:hover {
+    text-decoration: none; }
   nav a {
     position: relative;
     display: inline-block;

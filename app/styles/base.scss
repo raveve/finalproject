@@ -36,16 +36,8 @@ $image-text: #FFFFFF;
     text-align: center;
   }
 
-/*   nav{
-  a {
-    color: $image-text;
-    font-size: 32px;
-    text-transform: uppercase;
-  }
-} */
-
 a:hover {
-  underline: none;
+  text-decoration: none;
 }
 
   nav a {
