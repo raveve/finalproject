@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   angular.module('shampoodleApp')
-    .controller('AdminController', function (AdminService, $scope, $location, $routeParams) {
+    .controller('AdminController', function (AdminService, $scope, $location, $routeParams, uiGmapGoogleMapApi) {
         var adminCtrl = this;
 
         adminCtrl.profile = [];
@@ -33,7 +33,8 @@
             portimg4:newProfile.portimg4,
             portimg5:newProfile.portimg5,
             portimg6:newProfile.portimg6,
-            reviews: []
+            reviews: [],
+            pawRating: []
           });
           $scope.newProfile = {};
         };
@@ -46,6 +47,27 @@
          AdminService.editGroomer(profile);
          $location.path('/adminlist');
        };
+
+       uiGmapGoogleMapApi.then(function(maps) {
+
+       });
+
+       $scope.map = {
+         center: {
+           latitude: 32.79,
+           longitude: -79.95
+         },
+           zoom: 12
+       };
+
+
+       // .config(function(uiGmapGoogleMapApiProvider) {
+       //   uiGmapGoogleMapApiProvider.configure({
+       //       key: 'AIzaSyDqBUTHZ3C99MSLqjplh2_4yC7V3z-XYc4',
+       //       v: '3.17',
+       //       libraries: 'weather,geometry,visualization'
+       //   });
+       // })
 
     });
 

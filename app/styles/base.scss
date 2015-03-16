@@ -15,7 +15,7 @@ $image-text: #FFFFFF;
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url('../images/lightpaperfibers_@2X.png')
+    background-image: url('../images/subtle_white_feathers_@2X.png')
   }
 
   .header-img {
@@ -24,6 +24,16 @@ $image-text: #FFFFFF;
 
   .about-img {
     @include full-images('../images/homemap600.jpg');
+  }
+
+  .notfound-img {
+    @include full-images('../images/404img1920.jpg')
+  }
+
+  .notfound-text {
+    margin-top: 5vh;
+    color: $image-text;
+    text-align: center;
   }
 
 /*   nav{
@@ -51,6 +61,15 @@ $image-text: #FFFFFF;
   nav a:hover,
   nav a:focus {
   	outline: none;
+  }
+
+  .foot-double-up {
+    margin-top: 30vh;
+  }
+
+  .angular-google-map-container {
+    margin-top: 10vh;
+    height: 80vh;
   }
 
   .cl-effect-14 a {

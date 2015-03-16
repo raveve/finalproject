@@ -18,14 +18,10 @@
 
       var addNewReview = function (review, profile) {
         profile.reviews.push(review);
-        $http.put(url + "/" + profile._id, profile);
-      }
-
-      var getGroomerReviews = function (reviews) {
-        return $http.get(reviews);
-        var value = review.rating;
+        var value = review;
+        console.log(profile.pawRating);
         if (value === 1) {
-          return '<i class="fa fa-paw"></i>';
+          profile.pawRating.push('<i class="fa fa-paw"></i>');
         }
         else if (value === 2) {
           return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
@@ -39,7 +35,19 @@
         else if (value === 5) {
           return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
         }
+
+        $http.put(url + "/" + profile._id, profile);
       }
+
+      var getGroomerReviews = function (reviews) {
+
+      }
+      //
+      // var paws = 5;
+      //
+      // for (i=0; i<=paws; i++) {
+      //   return '<i class=>'
+      // }
 
       return {
         getGroomers: getGroomerProfiles,

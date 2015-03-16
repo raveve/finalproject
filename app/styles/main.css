@@ -4,31 +4,39 @@
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url("../images/lightpaperfibers_@2X.png"); }
-
+    background-image: url('../images/subtle_white_feathers_@2X.png'); }
   .header-img {
-    background: url("../images/homepg1920.jpg") no-repeat center center fixed;
+    background: url('../images/homepg1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .about-img {
-    background: url("../images/homemap600.jpg") no-repeat center center fixed;
+    background: url('../images/homemap600.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
+  .notfound-img {
+    background: url('../images/404img1920.jpg') no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .notfound-text {
+    margin-top: 5vh;
+    color: #FFFFFF;
+    text-align: center; }
   /*   nav{
-    a {
-      color: $image-text;
-      font-size: 32px;
-      text-transform: uppercase;
-    }
-  } */
+  a {
+    color: $image-text;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+} */
   nav a {
     position: relative;
     display: inline-block;
@@ -41,18 +49,18 @@
     font-weight: 400;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
     font-size: 1.35em; }
-
-  nav a:hover,
-  nav a:focus {
+  nav a:hover, nav a:focus {
     outline: none; }
-
+  .foot-double-up {
+    margin-top: 30vh; }
+  .angular-google-map-container {
+    margin-top: 10vh;
+    height: 80vh; }
   .cl-effect-14 a {
     padding: 0 20px;
     height: 45px;
     line-height: 45px; }
-
-  .cl-effect-14 a::before,
-  .cl-effect-14 a::after {
+  .cl-effect-14 a::before, .cl-effect-14 a::after {
     position: absolute;
     width: 45px;
     height: 2px;
@@ -63,7 +71,6 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     pointer-events: none; }
-
   .cl-effect-14 a::before {
     top: 0;
     left: 0;
@@ -73,7 +80,6 @@
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     transform-origin: 0 0; }
-
   .cl-effect-14 a::after {
     right: 0;
     bottom: 0;
@@ -83,82 +89,67 @@
     -webkit-transform-origin: 100% 0;
     -moz-transform-origin: 100% 0;
     transform-origin: 100% 0; }
-
-  .cl-effect-14 a:hover::before,
-  .cl-effect-14 a:hover::after,
-  .cl-effect-14 a:focus::before,
-  .cl-effect-14 a:focus::after {
+  .cl-effect-14 a:hover::before, .cl-effect-14 a:hover::after, .cl-effect-14 a:focus::before, .cl-effect-14 a:focus::after {
     opacity: 1; }
-
-  .cl-effect-14 a:hover::before,
-  .cl-effect-14 a:focus::before {
+  .cl-effect-14 a:hover::before, .cl-effect-14 a:focus::before {
     left: 50%;
     -webkit-transform: rotate(0deg) translateX(-50%);
     -moz-transform: rotate(0deg) translateX(-50%);
     transform: rotate(0deg) translateX(-50%); }
-
-  .cl-effect-14 a:hover::after,
-  .cl-effect-14 a:focus::after {
+  .cl-effect-14 a:hover::after, .cl-effect-14 a:focus::after {
     right: 50%;
     -webkit-transform: rotate(0deg) translateX(50%);
     -moz-transform: rotate(0deg) translateX(50%);
     transform: rotate(0deg) translateX(50%); }
-
   .home-logo {
     margin-top: 20vh; }
     .home-logo img {
       width: 80%; }
-
   .home-search {
     margin-top: 30vh; }
-
   .home-about {
     margin-top: 15vh; }
-
   .home-create {
     margin-top: 5vh; }
-
   .list-search {
     margin-top: 10vh; }
-
   .list-item {
     margin-top: 10vh; }
     .list-item img {
       display: inline; }
-
   .portfolio {
     margin-top: 15vh; }
-
   .portfolio-bio {
     margin-top: 5vh; } }
+
 /*******************************
 640PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 640px) {
   .about-img {
-    background: url("../images/homemap800.jpg") no-repeat center center fixed;
+    background: url('../images/homemap800.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .home-logo img {
     width: 60%; } }
+
 /*******************************
 960PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 960px) {
   .about-img {
-    background: url("../images/homemap1280.jpg") no-repeat center center fixed;
+    background: url('../images/homemap1280.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .home-logo img {
     width: 40%; } }
+
 /*******************************
 1280PX RESPONSIVE MEDIA QUERY
 *******************************/
@@ -167,11 +158,9 @@
 *******************************/
 @media screen and (min-width: 1280px) {
   .about-img {
-    background: url("../images/homemap1920.jpg") no-repeat center center fixed;
+    background: url('../images/homemap1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; } }
-
-/*# sourceMappingURL=main.css.map */

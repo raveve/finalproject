@@ -17,22 +17,36 @@
       }
 
       var addNewReview = function (review, profile) {
-        // profile.reviews = array
-        // review = object
         profile.reviews.push(review);
+        var value = review;
+        console.log(profile.pawRating);
+        if (value === 1) {
+          profile.pawRating.push('<i class="fa fa-paw"></i>');
+        }
+        else if (value === 2) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+        else if (value === 3) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+        else if (value === 4) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+        else if (value === 5) {
+          return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
+        }
+
         $http.put(url + "/" + profile._id, profile);
       }
 
       var getGroomerReviews = function (reviews) {
-        return $http.get(reviews);
-      }
 
-      // var search = function (searchTerm) {
-      //   search = searchTerm;
-      // }
+      }
       //
-      // var getSearch = function() {
-      //   return search;
+      // var paws = 5;
+      //
+      // for (i=0; i<=paws; i++) {
+      //   return '<i class=>'
       // }
 
       return {
@@ -40,8 +54,6 @@
         getGroomer: getGroomerProfile,
         addReview: addNewReview,
         getReviews: getGroomerReviews
-        // search: search,
-        // getSearch: getSearch
       };
     });
 
