@@ -29,7 +29,7 @@ router.route('/:collectionName')
       res.send(results)
     })
   })
-  .post(ensureAuthenticated, function(req, res, next) {
+  .post(function(req, res, next) {
     req.collection.insert(req.body, {}, function(e, results){
       if (e) return next(e)
       res.send(results[0])
@@ -43,13 +43,13 @@ router.route('/:collectionName/:id')
       res.send(result)
     })
   })
-  .put(ensureAuthenticated, function(req, res) {
+  .put(function(req, res) {
     delete req.body._id
     req.collection.updateById(req.params.id, {$set:req.body}, {safe:true, multi:false}, function(e, result){
       res.sendStatus((result===1)? 200 : 404 )
     });
   })
-  .delete(ensureAuthenticated, function(req, res, next) {
+  .delete(function(req, res, next) {
     req.collection.removeById(req.params.id, function(e, result){
       if (e) return next(e)
       res.send((result===1)?{msg:'success'}:{msg:'error'})

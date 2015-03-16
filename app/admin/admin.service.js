@@ -4,26 +4,29 @@
   angular.module('shampoodleApp')
     .factory('AdminService', function ($http, $rootScope) {
 
-      var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
+      // var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
 
       var getGroomerProfiles = function () {
-        return $http.get(url);
+        return $http.get("api/collections/shampoodle");
       }
 
       var getGroomerProfile = function (id) {
-        return $http.get(url + '/' + id);
+        return $http.get("api/collections/shampoodle" + '/' + id);
       }
 
       var addGroomerProfile = function (profile) {
-        $http.post(url, profile);
+        $http.post("api/collections/shampoodle", profile);
+          $rootScope.$broadcast("groomer:added");
       }
 
       var deleteGroomerProfile = function(id) {
-        $http.delete(url + '/' + id);
+        $http.delete("api/collections/shampoodle" + '/' + id);
+          $rootScope.$broadcast("groomer:deleted");
       }
 
       var editGroomerProfile = function(profile) {
-        $http.put(url + '/' + profile._id, profile);
+        $http.put("api/collections/shampoodle" + '/' + profile._id, profile);
+          $rootScope.$broadcast("groomer:updated");
       }
 
       var getGroomerCoords = function (company) {
@@ -51,7 +54,7 @@
         addGroomer: addGroomerProfile,
         deleteGroomer: deleteGroomerProfile,
         editGroomer: editGroomerProfile,
-        getCoords: getGroomerCoords,
+        getCoords: getGroomerCoords
       };
     });
 

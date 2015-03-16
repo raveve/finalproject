@@ -7,8 +7,8 @@
       <a href="#/list">
         Search
       </a>
-      <a href="">
-        Sign In
+      <a href="#/adminlist">
+        Admin
       </a>
   </nav>
   </div>
@@ -17,15 +17,9 @@
       <input type="search" class="form-control input-lg" placeholder="Search Groomer Portfolios...">
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2 list-item" ng-repeat="profile in adminCtrl.profiles">
-      <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
-      <p>{{profile.name}}</p>
-      <p><a href="{{profile.companyURL}}">{{profile.company}}</a></p>
-      <p>{{profile.address}}</p>
-      <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
-      <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
-      <p><a href="mailto:{{profile.email}}">{{profile.email}}</a></p>
+  <div class="row" ng-repeat="profile in adminCtrl.profiles">
+    <div class="col-md-3 col-md-offset-2 list-item">
+      <img src="{{profile.mainimg}}">
       <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
         Delete
       </button>
@@ -33,5 +27,13 @@
         <button class="btn btn-default">Edit</button>
       </a>
     </div>
+      <div class="col-md-2 list-item">
+        <p>{{profile.name}}</p>
+        <p><a href="{{profile.companyURL}}">{{profile.company}}</a></p>
+        <p>{{profile.address}}</p>
+        <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
+        <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
+        <p><a href="mailto:{{profile.email}}">{{profile.email}}</a></p>
+      </div>
   </div>
 </div>

@@ -116,9 +116,14 @@
   .list-item {
     margin-top: 10vh; }
     .list-item img {
-      display: inline; }
+      display: inline;
+      width: 100%; }
+    .list-item button {
+      margin-top: 2vh; }
   .portfolio {
     margin-top: 15vh; }
+    .portfolio img {
+      width: 100%; }
   .portfolio-bio {
     margin-top: 5vh; } }
 

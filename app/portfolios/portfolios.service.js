@@ -6,14 +6,14 @@
 
       var search;
 
-      var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
+      // var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
 
       var getGroomerProfiles = function () {
-        return $http.get(url);
+        return $http.get("api/collections/shampoodle");
       }
 
       var getGroomerProfile = function (id) {
-        return $http.get(url + '/' + id);
+        return $http.get("api/collections/shampoodle" + '/' + id);
       }
 
       var addNewReview = function (review, profile) {
@@ -36,7 +36,7 @@
           return '<i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i><i class="fa fa-paw"></i>';
         }
 
-        $http.put(url + "/" + profile._id, profile);
+        $http.put("api/collections/shampoodle" + "/" + profile._id, profile);
       }
 
       var getGroomerReviews = function (reviews) {

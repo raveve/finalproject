@@ -164,11 +164,18 @@ $image-text: #FFFFFF;
     margin-top: 10vh;
     img {
       display: inline;
+      width: 100%;
+    }
+    button {
+      margin-top: 2vh;
     }
   }
 
   .portfolio {
     margin-top: 15vh;
+    img {
+      width: 100%;
+    }
   }
 
   .portfolio-bio {
