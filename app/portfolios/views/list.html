@@ -17,13 +17,31 @@
       <input type="text" class="form-control input-lg" ng-model="searchTerm" placeholder="Search Groomer Portfolios...">
     </div>
   </div>
-  <div class="row" ng-repeat="profile in portCtrl.profiles | filter:searchTerm">
+  <div class="row">
+    <div class="col-md-3 col-md-offset-9">
+      <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default" ng-click="predicate = 'name'; reverse=false">
+          <i class="fa fa-sort-alpha-asc fa-fw"></i>
+        </button>
+        <button type="button" class="btn btn-default" ng-click="predicate = 'name'; reverse=true">
+          <i class="fa fa-sort-alpha-desc fa-fw"></i>
+        </button>
+        <button type="button" class="btn btn-default">
+          <i class="fa fa-long-arrow-down fa-fw"></i><i class="fa fa-paw fa-fw"></i>
+        </button>
+        <button type="button" class="btn btn-default">
+          <i class="fa fa-long-arrow-up fa-fw"></i><i class="fa fa-paw fa-fw"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row" ng-repeat="profile in portCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
     <div class="col-md-3 col-md-offset-2 list-item">
       <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
     </div>
     <div class="col-md-2 list-item">
       <p>{{profile.name}}</p>
-      <p><a href="{{profile.companyURL}}">{{profile.company}}</a></p>
+      <p><a href="{{profile.companyURL}}" target="_blank">{{profile.company}}</a></p>
       <p>{{profile.address}}</p>
       <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
       <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
