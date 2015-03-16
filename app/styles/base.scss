@@ -15,7 +15,7 @@ $image-text: #FFFFFF;
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url('../images/subtle_white_feathers_@2X.png')
+    background-image: url('../images/bright_squares.png')
   }
 
   .header-img {
@@ -43,6 +43,10 @@ $image-text: #FFFFFF;
     text-transform: uppercase;
   }
 } */
+
+a:hover {
+  underline: none;
+}
 
   nav a {
   	position: relative;
@@ -180,6 +184,10 @@ $image-text: #FFFFFF;
 
   .portfolio-bio {
     margin-top: 5vh;
+  }
+
+  .new-groomer {
+    margin-top: 10vh;
   }
 }
 

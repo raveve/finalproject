@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   angular.module('shampoodleApp')
-    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams, $filter) {
+    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams, $filter, _) {
         var portCtrl = this; // the scope of our controller is 'this'
 
         $scope.searchTerm = $routeParams.term;
@@ -28,6 +28,11 @@
         portCtrl.homeSearch = function (searchTerm) {
           $location.path('/list/' + searchTerm);
         };
+
+        portCtrl.getNumber = function(num) {
+          var convertedNum = Number(num);
+          return new Array(convertedNum);
+        }
 
     });
 

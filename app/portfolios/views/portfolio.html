@@ -118,7 +118,7 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2" ng-repeat="review in portCtrl.profile.reviews">
       <h4>{{review.title}}</h4>
-      <h4>{{review.pawRating}}</h4>
+      <h4><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-fw"></i></h4>
       <p>{{review.name}}</p>
       <p>{{review.review}}</p>
     </div>
@@ -128,8 +128,8 @@
 
 <script>
 
-  new Photostack( document.getElementById( 'photostack' ), {
-    callback : function( item ) {
+  new Photostack( document.getElementById('photostack'), {
+    callback: function(item) {
     }
-  } );
+  });
 </script>
