@@ -17,11 +17,12 @@
       }
 
       var addNewReview = function (review, profile) {
+        profile.reviews.push(review);
         $http.put("api/collections/shampoodle" + "/" + profile._id, profile);
       }
 
       var getGroomerReviews = function (reviews) {
-        $http.get("api/collections/shampoodle" + "/" + )
+        return $http.get(reviews)
       }
 
       return {
