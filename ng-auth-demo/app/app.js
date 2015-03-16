@@ -10,7 +10,8 @@ angular.module('shampoodleApp', [
   'profile',
   'posts',
   'portfoliosRoute',
-  'adminRoute'
+  'adminRoute',
+  'uiGmapgoogle-maps'
   ])
   .config(function($routeProvider) {
     $routeProvider

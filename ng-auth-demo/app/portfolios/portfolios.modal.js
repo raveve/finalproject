@@ -22,6 +22,10 @@
         templateUrl: 'portfolios/views/list.html',
         controller: 'PortfoliosController as portCtrl'
       })
+      .when ('/map', {
+        templateUrl: 'portfolios/views/map.html',
+        controller: 'PortfoliosController as portCtrl'
+      })
   });
 
 })();

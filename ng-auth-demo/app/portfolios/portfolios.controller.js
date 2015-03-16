@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   angular.module('shampoodleApp')
-    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams, $filter) {
+    .controller('PortfoliosController', function (PortfoliosService, $scope, $location, $routeParams, $filter, uiGmapGoogleMapApi) {
         var portCtrl = this; // the scope of our controller is 'this'
 
         $scope.searchTerm = $routeParams.term;
@@ -27,6 +27,18 @@
 
         portCtrl.homeSearch = function (searchTerm) {
           $location.path('/list/' + searchTerm);
+        };
+
+        uiGmapGoogleMapApi.then(function(maps) {
+
+        });
+
+        $scope.map = {
+          center: {
+            latitude: 45,
+            longitude: -73
+          },
+            zoom: 8
         };
 
     });

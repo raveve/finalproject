@@ -51,6 +51,10 @@
     font-size: 1.35em; }
   nav a:hover, nav a:focus {
     outline: none; }
+  .foot-double-up {
+    margin-top: 30vh; }
+  .angular-google-map-container {
+    height: 90vh; }
   .cl-effect-14 a {
     padding: 0 20px;
     height: 45px;

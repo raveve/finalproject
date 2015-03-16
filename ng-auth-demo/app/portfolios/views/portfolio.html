@@ -1,7 +1,7 @@
 <div class="container-fluid">
 <div class="row">
   <nav class="navbar-fixed-top col-md-5 col-md-offset-7 cl-effect-14">
-      <a href="">
+      <a href="#/map">
         Map
       </a>
       <a href="#/list">
@@ -15,8 +15,8 @@
   <div class="row">
     <div class="col-md-3 col-md-offset-2 portfolio">
       <img src="{{portCtrl.profile.mainimg}}">
-      <p><a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
-      <p><a href="mailto:{{portCtrl.profile.email}}" target="_blank">{{portCtrl.profile.email}}</a></p>
+      <p><i class="fa fa-phone fa-fw"></i> <a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
+      <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{portCtrl.profile.email}}" target="_blank">{{portCtrl.profile.email}}</a></p>
     </div>
     <div class="col-md-4 portfolio">
       <p>{{portCtrl.profile.name}}</p>
@@ -41,42 +41,41 @@
     </div>
   </div>
   <div class="row">
-    <section id="photostack" class="col-md-12 photostack photostack-start">
+  <section id="photostack" class="col-md-12 photostack photostack-start">
     <div>
 
   <figure>
     <div class="photostack-img">
-      <img src="http://www.dogwatchmk.co.uk/wp-content/uploads/2014/07/dog_grooming.jpg" alt="">
+      <img src="{{portCtrl.profile.portimg1}}">
     </div>
   </figure>
   <figure>
     <div class="photostack-img">
-      <img src="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/2d/b5/2db59413b9e8ff01866efc0708631d28.jpg?itok=oCVIHNSZ" alt="">
+      <img src="{{portCtrl.profile.portimg2}}">
     </div>
   </figure>
   <figure>
     <div class="photostack-img">
-      <img src="http://stonehillpetresort.com/yahoo_site_admin/assets/images/Afghan-dog-with-hair-curlers-Regine-Will-200449.210222438_std.jpg" alt="">
+      <img src="{{portCtrl.profile.portimg3}}">
     </div>
   </figure>
   <figure>
     <div class="photostack-img">
-      <img src="http://api.ning.com/files/DtcI2O2Ry7C*KPSrYsqDOLDajcPjQQNrjWQgNPvlLY1j0VWXN5OC2EKJtib-RVwm3cEcOgjg7ya9tfZo5YKyusvEFe5Hrj5a/1082135744.jpeg" alt="">
+      <img src="{{portCtrl.profile.portimg4}}">
     </div>
   </figure>
   <figure>
     <div class="photostack-img">
-      <img src="https://www.petfinder.com/wp-content/uploads/2012/11/146067791-how-to-dog-bath-632x475.jpg" alt="">
+      <img src="{{portCtrl.profile.portimg5}}">
+    </div>
+  </figure>
+  <figure>
+    <div class="photostack-img">
+      <img src="{{portCtrl.profile.portimg6}}">
     </div>
   </figure>
 </div>
 </section>
-      <!--   <img src="{{portCtrl.profile.portimg1}}">
-      <img src="{{portCtrl.profile.portimg2}}">
-      <img src="{{portCtrl.profile.portimg3}}">
-      <img src="{{portCtrl.profile.portimg4}}">
-      <img src="{{portCtrl.profile.portimg5}}">
-      <img src="{{portCtrl.profile.portimg6}}"> -->
   </div>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
