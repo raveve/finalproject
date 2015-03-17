@@ -13,12 +13,12 @@
       }
 
       var getGroomerProfile = function (id) {
-        return $http.get("api/collections/shampoodle" + '/' + id);
+        return $http.get("api/collections/shampoodle/" + id);
       }
 
       var addNewReview = function (review, profile) {
         profile.reviews.push(review);
-        $http.put("api/collections/shampoodle" + "/" + profile._id, profile);
+        $http.put("api/collections/shampoodle/" + profile._id, profile);
       }
 
       return {

@@ -8,11 +8,18 @@
 
         AdminService.getGroomers().success(function (profiles) {
           adminCtrl.profiles = profiles;
+          console.log(adminCtrl.profiles);
+          console.log(adminCtrl.profiles.length);
+          for( var i = 0; i < adminCtrl.profiles.length; i++){
+            console.log(adminCtrl.profiles[i]);
+            AdminService.getCoords(adminCtrl.profiles[i]);
+          }
         });
 
         AdminService.getGroomer($routeParams.profileid).then(function (response) {
          adminCtrl.profile = response.data;
-       });
+        });
+
 
         adminCtrl.addGroomer = function (newProfile) {
           AdminService.addGroomer({

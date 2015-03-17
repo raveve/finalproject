@@ -16,10 +16,10 @@
   <div class="col-md-8 col-md-offset-2">
     <ui-gmap-google-map center="map.center" zoom="map.zoom">
       <div ng-repeat="profile in portCtrl.profiles">
-        <ui-gmap-markers idKey="profile._id" coords="groomer.coords" icon="'icon'">
+        <ui-gmap-marker idKey="profile._id" coords="profile.coords" icon="icon">
           <ui-gmap-window options="windowOptions" closeClick="closeClick()">
             <div class="map-window">
-              <img src="{{profile.mainimg}}" alt="">
+              <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}" alt=""></a>
               <div class="map-groomer-detail">
                 <p>{{profile.address}}</p>
                 <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
@@ -28,7 +28,7 @@
               </div>
             </div>
           </ui-gmap-window>
-        </ui-gmap-markers>
+        </ui-gmap-marker>
       </div>
     </ui-gmap-google-map>
   </div>

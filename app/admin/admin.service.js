@@ -11,7 +11,7 @@
       }
 
       var getGroomerProfile = function (id) {
-        return $http.get("api/collections/shampoodle" + '/' + id);
+        return $http.get("api/collections/shampoodle/" + id);
       }
 
       var addGroomerProfile = function (profile) {
@@ -20,30 +20,30 @@
       }
 
       var deleteGroomerProfile = function(id) {
-        $http.delete("api/collections/shampoodle" + '/' + id);
+        $http.delete("api/collections/shampoodle/" + id);
           $rootScope.$broadcast("groomer:deleted");
       }
 
       var editGroomerProfile = function(profile) {
-        $http.put("api/collections/shampoodle" + '/' + profile._id, profile);
+        $http.put("api/collections/shampoodle/" + profile._id, profile);
           $rootScope.$broadcast("groomer:updated");
       }
 
-      var getGroomerCoords = function (company) {
+      var getGroomerCoords = function (profile) {
         var replacedStreet = profile.address.split(' ').join('+');
         var replacedCity = profile.city.split(' ').join('+');
         var replacedState = profile.state.split(' ').join('+');
         var address = replacedStreet + ',+' + replacedCity + ',+' + replacedState;
         var apiKey = '&key=AIzaSyDqBUTHZ3C99MSLqjplh2_4yC7V3z-XYc4'
         var url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + apiKey;
-
-        $http.get("api/collection/shampoodle").success(function(dataset){
+        console.log(url);
+        $http.get(url).success(function(dataset){
           console.log(dataset);
           var compGeo = dataset.results[0].geometry.location
-          groomer.coords = {};
-          groomer.coords.longitude = compGeo.lng;
+          profile.coords = {};
+          profile.coords.longitude = compGeo.lng;
 
-          groomer.coords.latitude = compGeo.lat;
+          profile.coords.latitude = compGeo.lat;
           editGroomerProfile(profile, profile._id);
         });
       };

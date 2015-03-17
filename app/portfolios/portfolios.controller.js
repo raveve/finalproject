@@ -15,7 +15,7 @@
 
          portCtrl.ratingAvg = _.reduce(portCtrl.profile.reviews, function(sum, review) {
            console.log('review ', review.rating);
-             return sum += Number(review.rating);
+             return sum += +(review.rating);
            }, 0) / portCtrl.profile.reviews.length
            portCtrl.ratingAvg = Math.round(portCtrl.ratingAvg);
 
