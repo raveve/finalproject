@@ -33,8 +33,7 @@
             portimg4:newProfile.portimg4,
             portimg5:newProfile.portimg5,
             portimg6:newProfile.portimg6,
-            reviews: [],
-            pawRating: []
+            reviews: []
           });
           $scope.newProfile = {};
         };

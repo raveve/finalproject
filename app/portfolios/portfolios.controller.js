@@ -32,7 +32,13 @@
         portCtrl.getNumber = function(num) {
           var convertedNum = Number(num);
           return new Array(convertedNum);
-        }
+        };
+
+        // ratings = [_.each(review.rating) +];
+        //
+        // portCtrl.mean = _.reduce(ratings, function(sum, review) {
+        //   sum + review.rating
+        // }, 0) / reviews.length
 
     });
 
