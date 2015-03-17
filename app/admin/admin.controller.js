@@ -66,15 +66,6 @@
            zoom: 12
        };
 
-
-       // .config(function(uiGmapGoogleMapApiProvider) {
-       //   uiGmapGoogleMapApiProvider.configure({
-       //       key: 'AIzaSyDqBUTHZ3C99MSLqjplh2_4yC7V3z-XYc4',
-       //       v: '3.17',
-       //       libraries: 'weather,geometry,visualization'
-       //   });
-       // })
-
     });
 
 })();
