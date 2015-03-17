@@ -12,14 +12,22 @@
 
         PortfoliosService.getGroomer($routeParams.portfolioid).then(function (response) {
          portCtrl.profile = response.data;
+
          portCtrl.ratingSum = _.reduce(portCtrl.profile.reviews, function(sum, review) {
-           console.log('sum ', sum.rating);
            console.log('review ', review.rating);
-             return Number(sum.rating) + Number(review.rating);
-           });
-           console.log(portCtrl.ratingSum/portCtrl.profile.reviews.length);
+             return sum += Number(review.rating);
+           }, 0) / portCtrl.profile.reviews.length
+          //  console.log(portCtrl.ratingSum/portCtrl.profile.reviews.length);
+
+          console.log(portCtrl.ratingSum)
 
         });
+
+        // var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+
+//         mean = _.reduce(pixels, function(sum, pixel) {
+//   sum + pixel.red
+// }, 0) / pixels.length
 
         portCtrl.go = function (index) {
           $location.path('/fullview/' + index);
