@@ -37,7 +37,7 @@
         var apiKey = '&key=AIzaSyDqBUTHZ3C99MSLqjplh2_4yC7V3z-XYc4'
         var url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + apiKey;
 
-        $http.get(url).success(function(dataset){
+        $http.get("api/collection/shampoodle").success(function(dataset){
           console.log(dataset);
           var compGeo = dataset.results[0].geometry.location
           groomer.coords = {};

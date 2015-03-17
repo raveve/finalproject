@@ -24,6 +24,9 @@
       <p>{{portCtrl.profile.address}}</p>
       <p>{{portCtrl.profile.city}}, {{portCtrl.profile.state}} {{portCtrl.profile.zip}}</p>
     </div>
+    <div class="col-md-1 portfolio">
+      <h4>Rating sum: {{portCtrl.ratingSum}}</h4>
+    </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 portfolio-bio">
@@ -115,8 +118,8 @@
         </button>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2" ng-repeat="review in portCtrl.profile.reviews">
+  <div class="row" ng-repeat="review in portCtrl.profile.reviews">
+    <div class="col-md-8 col-md-offset-2">
       <h4>{{review.title}}</h4>
       <h4><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-lg fa-fw"></i></h4>
       <p>{{review.name}}</p>
@@ -132,5 +135,5 @@
     callback: function(item) {
     }
   });
-  
+
 </script>

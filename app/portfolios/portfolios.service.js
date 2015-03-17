@@ -21,15 +21,10 @@
         $http.put("api/collections/shampoodle" + "/" + profile._id, profile);
       }
 
-      var getGroomerReviews = function (reviews) {
-        return $http.get(reviews)
-      }
-
       return {
         getGroomers: getGroomerProfiles,
         getGroomer: getGroomerProfile,
-        addReview: addNewReview,
-        getReviews: getGroomerReviews
+        addReview: addNewReview
       };
     });
 

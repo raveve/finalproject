@@ -12,9 +12,14 @@
 
         PortfoliosService.getGroomer($routeParams.portfolioid).then(function (response) {
          portCtrl.profile = response.data;
-        });
+         portCtrl.ratingSum = _.reduce(portCtrl.profile.reviews, function(sum, review) {
+           console.log('sum ', sum.rating);
+           console.log('review ', review.rating);
+             return Number(sum.rating) + Number(review.rating);
+           });
+           console.log(portCtrl.ratingSum/portCtrl.profile.reviews.length);
 
-        portCtrl.reviews = PortfoliosService.getReviews();
+        });
 
         portCtrl.go = function (index) {
           $location.path('/fullview/' + index);
@@ -33,12 +38,6 @@
           var convertedNum = Number(num);
           return new Array(convertedNum);
         };
-
-        // ratings = [_.each(review.rating) +];
-        //
-        // portCtrl.mean = _.reduce(ratings, function(sum, review) {
-        //   sum + review.rating
-        // }, 0) / reviews.length
 
     });
 
