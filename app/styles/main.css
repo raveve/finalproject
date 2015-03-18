@@ -101,7 +101,7 @@
     .home-logo img {
       width: 80%; }
   .home-search {
-    margin-top: 30vh; }
+    margin-top: 45vh; }
   .home-about {
     margin-top: 15vh; }
   .home-create {
@@ -150,7 +150,7 @@
     -o-background-size: cover;
     background-size: cover; }
   .home-logo img {
-    width: 40%; } }
+    width: 50%; } }
 
 /*******************************
 1280PX RESPONSIVE MEDIA QUERY
