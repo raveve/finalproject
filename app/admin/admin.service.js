@@ -32,12 +32,12 @@
         var replacedCity = profile.city.split(' ').join('+');
         var replacedState = profile.state.split(' ').join('+');
         var address = replacedStreet + ',+' + replacedCity + ',+' + replacedState;
-        var apiKey = '&key=AIzaSyDqBUTHZ3C99MSLqjplh2_4yC7V3z-XYc4'
+        var apiKey = '&key=AIzaSyDqBUTHZ3C99MSLqjplh2_4yC7V3z-XYc4';
         var url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + apiKey;
         console.log(url);
         $http.get(url).success(function(dataset){
           console.log(dataset);
-          var compGeo = dataset.results[0].geometry.location
+          var compGeo = dataset.results[0].geometry.location;
           profile.coords = {};
           profile.coords.longitude = compGeo.lng;
 

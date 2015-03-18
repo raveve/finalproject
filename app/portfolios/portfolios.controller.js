@@ -13,13 +13,9 @@
         PortfoliosService.getGroomer($routeParams.portfolioid).then(function (response) {
          portCtrl.profile = response.data;
 
-         portCtrl.ratingAvg = _.reduce(portCtrl.profile.reviews, function(sum, review) {
-          console.log('review ', review.rating);
-            return sum += +(review.rating);
-          }, 0) / portCtrl.profile.reviews.length
-          portCtrl.ratingAvg = Math.round(portCtrl.ratingAvg);
+         portCtrl.ratingAvg = PortfoliosService.ratingAvg(portCtrl.profile);
 
-         console.log(portCtrl.ratingAvg)
+         console.log(portCtrl.profile.avgpaws);
 
         });
 

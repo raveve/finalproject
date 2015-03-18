@@ -18,14 +18,14 @@
       <p><i class="fa fa-phone fa-fw"></i> <a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
       <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{portCtrl.profile.email}}" target="_blank">{{portCtrl.profile.email}}</a></p>
     </div>
-    <div class="col-md-4 portfolio">
+    <div class="col-md-3 portfolio">
       <p>{{portCtrl.profile.name}}</p>
       <p><a href="{{portCtrl.profile.companyURL}}">{{portCtrl.profile.company}}</a></p>
       <p>{{portCtrl.profile.address}}</p>
       <p>{{portCtrl.profile.city}}, {{portCtrl.profile.state}} {{portCtrl.profile.zip}}</p>
     </div>
-    <div class="col-md-1 portfolio">
-      <h4>Rating average: {{portCtrl.ratingAvg}}</h4>
+    <div class="col-md-2 portfolio">
+      <h4><i ng-repeat="i in portCtrl.getNumber(portCtrl.profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h4>
     </div>
   </div>
   <div class="row">
