@@ -6,8 +6,6 @@
 
       var search;
 
-      // var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
-
       var getGroomerProfiles = function () {
         return $http.get("api/collections/shampoodle");
       }
@@ -21,10 +19,17 @@
         $http.put("api/collections/shampoodle/" + profile._id, profile);
       }
 
+      var addAvgPaws = function (ratingAvg, profile) {
+        profile.avgpaws.push(ratingAvg);
+        $http.put("api/collections/shampoodle/" + profile._id, profile);
+        $rootScope.$broadcast("groomer:updated");
+      }
+
       return {
         getGroomers: getGroomerProfiles,
         getGroomer: getGroomerProfile,
-        addReview: addNewReview
+        addReview: addNewReview,
+        addPaws: addAvgPaws
       };
     });
 

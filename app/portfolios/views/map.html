@@ -13,9 +13,14 @@
   </nav>
 </div>
 <div class="row">
+  <div class="col-md-4 col-md-offset-4 list-search">
+    <input type="text" class="form-control input-lg" ng-model="searchTerm" placeholder="Search Groomer Portfolios...">
+  </div>
+</div>
+<div class="row">
   <div class="col-md-8 col-md-offset-2">
     <ui-gmap-google-map center="map.center" zoom="map.zoom">
-      <div ng-repeat="profile in portCtrl.profiles">
+      <div ng-repeat="profile in portCtrl.profiles | filter:searchTerm">
         <ui-gmap-marker idKey="profile._id" coords="profile.coords" icon="icon">
           <ui-gmap-window options="windowOptions" closeClick="closeClick()">
             <div class="map-window">

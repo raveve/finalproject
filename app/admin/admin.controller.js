@@ -40,6 +40,7 @@
             portimg4:newProfile.portimg4,
             portimg5:newProfile.portimg5,
             portimg6:newProfile.portimg6,
+            avgpaws: '0',
             reviews: []
           });
           $scope.newProfile = {};
@@ -60,7 +61,7 @@
 
        $scope.map = {
          center: {
-           latitude: 32.79,
+           latitude: 32.82,
            longitude: -79.95
          },
            zoom: 12

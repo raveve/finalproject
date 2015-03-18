@@ -4,8 +4,6 @@
   angular.module('shampoodleApp')
     .factory('AdminService', function ($http, $rootScope) {
 
-      // var url = "http://tiy-fee-rest.herokuapp.com/collections/shampoodleApp";
-
       var getGroomerProfiles = function () {
         return $http.get("api/collections/shampoodle");
       }

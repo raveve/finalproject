@@ -4,7 +4,7 @@
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url('../images/bright_squares.png'); }
+    background-image: url('../images/squared_metal.png'); }
   .header-img {
     background: url('../images/homepg1920.jpg') no-repeat center center fixed;
     height: 100vh;
@@ -30,13 +30,6 @@
     margin-top: 5vh;
     color: #FFFFFF;
     text-align: center; }
-  /*   nav{
-  a {
-    color: $image-text;
-    font-size: 32px;
-    text-transform: uppercase;
-  }
-} */
   a:hover {
     text-decoration: none; }
   nav a {
@@ -56,8 +49,8 @@
   .foot-double-up {
     margin-top: 30vh; }
   .angular-google-map-container {
-    margin-top: 10vh;
-    height: 80vh; }
+    margin-top: 5vh;
+    height: 75vh; }
   .cl-effect-14 a {
     padding: 0 20px;
     height: 45px;
