@@ -25,7 +25,7 @@
       <p>{{portCtrl.profile.city}}, {{portCtrl.profile.state}} {{portCtrl.profile.zip}}</p>
     </div>
     <div class="col-md-1 portfolio">
-      <h4>Rating average: {{portCtrl.profile.avgpaws}}</h4>
+      <h4>Rating average: {{portCtrl.ratingAvg}}</h4>
     </div>
   </div>
   <div class="row">
@@ -90,7 +90,7 @@
       <button class="btn btn-default" ng-click="showReviewForm = !showReviewForm">
         Add Review
       </button>
-      <form ng-submit="portCtrl.addReview(newReview, portCtrl.profile)" ng-submit="portCtrl.addPaws(newAvgPaws, portCtrl.profile)" ng-show="showReviewForm">
+      <form ng-submit="portCtrl.addReview(newReview, portCtrl.profile)" ng-show="showReviewForm">
         <div class="form-group">
           <label for="">Name</label>
           <input class="form-control" type="text" ng-model="newReview.name" required>

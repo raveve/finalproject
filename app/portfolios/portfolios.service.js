@@ -14,9 +14,8 @@
         return $http.get("api/collections/shampoodle/" + id);
       }
 
-      var addNewReview = function (review, ratingAvg, profile) {
+      var addNewReview = function (review, profile) {
         profile.reviews.push(review);
-        profile.reviews.avgpaws(ratingAvg);
         $http.put("api/collections/shampoodle/" + profile._id, profile);
       }
 

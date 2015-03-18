@@ -13,6 +13,14 @@
         PortfoliosService.getGroomer($routeParams.portfolioid).then(function (response) {
          portCtrl.profile = response.data;
 
+         portCtrl.ratingAvg = _.reduce(portCtrl.profile.reviews, function(sum, review) {
+          console.log('review ', review.rating);
+            return sum += +(review.rating);
+          }, 0) / portCtrl.profile.reviews.length
+          portCtrl.ratingAvg = Math.round(portCtrl.ratingAvg);
+
+         console.log(portCtrl.ratingAvg)
+
         });
 
         portCtrl.go = function (index) {
@@ -21,15 +29,6 @@
 
         portCtrl.addReview = function (newReview, profile) {
           PortfoliosService.addReview(newReview, profile);
-
-          portCtrl.profile = response.data;
-
-          ratingAvg = _.reduce(profile.reviews, function(sum, review) {
-          //  console.log('review ', review.rating);
-           return sum += +(review.rating);
-           }, 0) / portCtrl.profile.reviews.length;
-          // ratingAvg = Math.round(portCtrl.ratingAvg);
-
           $scope.newReview = {};
         };
 
