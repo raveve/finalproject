@@ -14,22 +14,16 @@
         return $http.get("api/collections/shampoodle/" + id);
       }
 
-      var addNewReview = function (review, profile) {
+      var addNewReview = function (review, ratingAvg, profile) {
         profile.reviews.push(review);
+        profile.reviews.avgpaws(ratingAvg);
         $http.put("api/collections/shampoodle/" + profile._id, profile);
-      }
-
-      var addAvgPaws = function (ratingAvg, profile) {
-        profile.avgpaws.push(ratingAvg);
-        $http.put("api/collections/shampoodle/" + profile._id, profile);
-        $rootScope.$broadcast("groomer:updated");
       }
 
       return {
         getGroomers: getGroomerProfiles,
         getGroomer: getGroomerProfile,
-        addReview: addNewReview,
-        addPaws: addAvgPaws
+        addReview: addNewReview
       };
     });
 
