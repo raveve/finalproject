@@ -27,7 +27,7 @@
     -o-background-size: cover;
     background-size: cover; }
   .notfound-text {
-    margin-top: 5vh;
+    margin-top: 45vh;
     color: #FFFFFF;
     text-align: center; }
   a:hover {
@@ -100,6 +100,10 @@
     margin-top: 20vh; }
     .home-logo img {
       width: 80%; }
+  .notfound-logo {
+    margin-top: 10vh; }
+    .notfound-logo img {
+      width: 40%; }
   .home-search {
     margin-top: 45vh; }
   .home-about {

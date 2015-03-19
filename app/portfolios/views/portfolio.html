@@ -123,6 +123,7 @@
       <h4>{{review.title}}</h4>
       <h4><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-lg fa-fw"></i></h4>
       <p>{{review.name}}</p>
+      <p>{{date | date:'MMM d, y h:mm a'}}</p>
       <p>{{review.review}}</p>
     </div>
   </div>

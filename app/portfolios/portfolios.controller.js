@@ -12,12 +12,11 @@
 
         PortfoliosService.getGroomer($routeParams.portfolioid).then(function (response) {
          portCtrl.profile = response.data;
-
          portCtrl.ratingAvg = PortfoliosService.ratingAvg(portCtrl.profile);
-
          console.log(portCtrl.profile.avgpaws);
-
         });
+
+        $scope.date = new Date();
 
         portCtrl.go = function (index) {
           $location.path('/fullview/' + index);

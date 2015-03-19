@@ -31,7 +31,7 @@ $image-text: #FFFFFF;
   }
 
   .notfound-text {
-    margin-top: 5vh;
+    margin-top: 45vh;
     color: $image-text;
     text-align: center;
   }
@@ -137,6 +137,13 @@ a:hover {
     margin-top: 20vh;
     img {
       width: 80%;
+    }
+  }
+
+  .notfound-logo {
+    margin-top: 10vh;
+    img {
+      width: 40%;
     }
   }
 
