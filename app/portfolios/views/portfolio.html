@@ -100,6 +100,10 @@
           <input class="form-control" type="text" ng-model="newReview.title" required>
         </div>
         <div class="form-group">
+          <label for="">Date/Time</label>
+          <input type="date" class="form-control" ng-model="newReview.date" required>
+        </div>
+        <div class="form-group">
           <label for="">Paw Rating</label>
           <select class="form-control" ng-model="newReview.rating" required>
             <option value="1">1 Paw</option>
@@ -123,7 +127,7 @@
       <h4>{{review.title}}</h4>
       <h4><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-lg fa-fw"></i></h4>
       <p>{{review.name}}</p>
-      <p>{{date | date:'MMM d, y h:mm a'}}</p>
+      <p>{{review.date | date:'MMM d, y'}}</p>
       <p>{{review.review}}</p>
     </div>
   </div>

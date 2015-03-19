@@ -16,12 +16,12 @@
          console.log(portCtrl.profile.avgpaws);
         });
 
-        $scope.date = new Date();
-
         portCtrl.go = function (index) {
           $location.path('/fullview/' + index);
         };
 
+        $scope.date = new Date();
+        
         portCtrl.addReview = function (newReview, profile) {
           PortfoliosService.addReview(newReview, profile);
           $scope.newReview = {};
