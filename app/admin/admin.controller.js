@@ -41,7 +41,7 @@
             portimg5:newProfile.portimg5,
             portimg6:newProfile.portimg6,
             avgpaws: '0',
-            approved: 'false',
+            approved: false,
             reviews: []
           });
           $scope.newProfile = {};
