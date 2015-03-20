@@ -10,6 +10,10 @@
         templateUrl: 'admin/views/portfolio-setup.html',
         controller: 'AdminController as adminCtrl'
       })
+      .when('/admin', {
+        templateUrl: 'admin/views/admin.html',
+        controller: 'AdminController as adminCtrl'
+      })
       .when('/adminlist', {
         templateUrl: 'admin/views/admin-list.html',
         controller: 'AdminController as adminCtrl'

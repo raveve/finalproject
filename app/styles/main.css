@@ -30,6 +30,13 @@
     margin-top: 45vh;
     color: #FFFFFF;
     text-align: center; }
+  .admin-img {
+    background: url('../images/admin1920.jpg') no-repeat center center fixed;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   a:hover {
     text-decoration: none; }
   nav a {

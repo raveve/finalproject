@@ -1,13 +1,16 @@
 <div class="container-fluid">
 <div class="row">
-    <nav class="navbar-fixed-top col-md-5 col-md-offset-7 cl-effect-14">
+    <nav class="navbar-fixed-top col-md-6 col-md-offset-6 cl-effect-14">
+        <a href="#/#about">
+          About
+        </a>
         <a href="#/map">
           Map
         </a>
         <a href="#/list">
           Portfolios
         </a>
-        <a href="#adminlist">
+        <a href="#admin">
           Admin
         </a>
     </nav>
@@ -36,7 +39,7 @@
     </div>
   </div>
   <div class="row" ng-repeat="profile in portCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
-    <div ng-show="profile.approved"> 
+    <div ng-show="profile.approved">
     <div class="col-md-3 col-md-offset-2 list-item">
       <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
     </div>

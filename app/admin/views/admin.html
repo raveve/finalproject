@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="admin-img col-md-12">
+      <div class="row">
+        <nav class="navbar-fixed-top col-md-6 col-md-offset-6 cl-effect-14">
+          <a href="#/#about">
+            About
+          </a>
+          <a href="#/map">
+            Map
+          </a>
+          <a href="#/list">
+            Portfolios
+          </a>
+          <a href="#/admin">
+            Admin
+          </a>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-1 notfound-logo">
+          <a href="#/">
+            <img src="images/shampoodle-logo-white.png">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h2>Administrator Login</h2>
+          <form>
+            <div class="form-group">
+              <label for="">Username</label>
+              <input class="form-control" type="text" ng-model="adminCtrl.userName" required>
+            </div>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input class="form-control" type="password" ng-model="adminCtrl.password" required>
+            </div>
+            <button type="submit" class="btn btn-default pull-right" ng-click="adminCtrl.login(adminCtrl.userName, adminCtrl.password)">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

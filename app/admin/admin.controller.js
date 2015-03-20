@@ -4,6 +4,12 @@
     .controller('AdminController', function (AdminService, $scope, $location, $routeParams, uiGmapGoogleMapApi) {
         var adminCtrl = this;
 
+        adminCtrl.login = function (userName, password) {
+       if(userName === "raveve" & password === "password123") {
+         $location.path('/adminlist');
+       }
+     };
+
         adminCtrl.profile = [];
 
         AdminService.getGroomers().success(function (profiles) {

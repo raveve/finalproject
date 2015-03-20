@@ -36,6 +36,10 @@ $image-text: #FFFFFF;
     text-align: center;
   }
 
+  .admin-img {
+    @include full-images('../images/admin1920.jpg')
+  }
+
 a:hover {
   text-decoration: none;
 }
