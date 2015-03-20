@@ -126,6 +126,8 @@
       width: 100%; }
     .list-item button {
       margin-top: 2vh; }
+  .edit {
+    margin-top: 10vh; }
   .portfolio {
     margin-top: 15vh; }
     .portfolio img {
