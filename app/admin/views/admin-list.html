@@ -38,6 +38,9 @@
       <a href="#/edit/{{profile._id}}">
         <button class="btn btn-default">Edit</button>
       </a>
+      <button class="btn btn-default" ng-hide="profile.approved" ng-click="adminCtrl.approveGroomer(profile)">
+        Approve
+      </button>
     </div>
       <div class="col-md-2 list-item">
         <p>{{profile.name}}</p>

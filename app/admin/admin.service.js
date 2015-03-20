@@ -17,6 +17,12 @@
           $rootScope.$broadcast("groomer:added");
       }
 
+      var approveGroomer = function (profile) {
+        profile.approved = true;
+        $http.put("api/collections/shampoodle/" + profile._id, profile);
+        $rootScope.$broadcast("groomer:approved");
+      }
+
       var deleteGroomerProfile = function(id) {
         $http.delete("api/collections/shampoodle/" + id);
           $rootScope.$broadcast("groomer:deleted");
@@ -52,7 +58,8 @@
         addGroomer: addGroomerProfile,
         deleteGroomer: deleteGroomerProfile,
         editGroomer: editGroomerProfile,
-        getCoords: getGroomerCoords
+        getCoords: getGroomerCoords,
+        approveGroomer: approveGroomer
       };
     });
 

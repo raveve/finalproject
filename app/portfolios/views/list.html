@@ -36,6 +36,7 @@
     </div>
   </div>
   <div class="row" ng-repeat="profile in portCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
+    <div ng-show="profile.approved"> 
     <div class="col-md-3 col-md-offset-2 list-item">
       <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
     </div>
@@ -49,8 +50,8 @@
     </div>
     <div class="col-md-2 list-item">
       <h4><i ng-repeat="i in portCtrl.getNumber(profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h4>
-
     </div>
+  </div>
   </div>
 <!--   <div class="row">
   <div class="col-md-8 col-md-offset-2 list-item">

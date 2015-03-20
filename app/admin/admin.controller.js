@@ -41,10 +41,15 @@
             portimg5:newProfile.portimg5,
             portimg6:newProfile.portimg6,
             avgpaws: '0',
+            approved: 'false',
             reviews: []
           });
           $scope.newProfile = {};
         };
+
+        adminCtrl.approveGroomer = function (profile) {
+          AdminService.approveGroomer(profile);
+        }
 
         adminCtrl.deleteGroomer = function (id) {
           AdminService.deleteGroomer(id);
