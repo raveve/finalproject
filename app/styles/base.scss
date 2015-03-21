@@ -55,12 +55,11 @@ $image-text: #FFFFFF;
   	display: inline-block;
   	margin: 15px 25px;
   	outline: none;
-  	color: #fff;
+  	color: $image-text;
   	text-decoration: none;
   	text-transform: uppercase;
   	letter-spacing: 1px;
   	font-weight: 400;
-  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
   	font-size: 1.35em;
   }
 
@@ -68,22 +67,6 @@ $image-text: #FFFFFF;
   nav a:focus {
   	outline: none;
     color: $image-text;
-  }
-
-  .foot-top {
-    margin-top: 30vh;
-    a {
-      color: $image-text;
-    }
-    a:hover, a:focus {
-      text-decoration: none;
-    }
-  }
-
-  .angular-google-map-container {
-    margin-top: 5vh;
-    height: 75vh;
-    @include box-shadow;
   }
 
   .cl-effect-14 a {
@@ -149,6 +132,22 @@ $image-text: #FFFFFF;
   	-webkit-transform: rotate(0deg) translateX(50%);
   	-moz-transform: rotate(0deg) translateX(50%);
   	transform: rotate(0deg) translateX(50%);
+  }
+
+  .foot-top {
+    margin-top: 30vh;
+    a {
+      color: $image-text;
+    }
+    a:hover, a:focus {
+      text-decoration: none;
+    }
+  }
+
+  .angular-google-map-container {
+    margin-top: 5vh;
+    height: 75vh;
+    @include box-shadow;
   }
 
   .home-logo {
