@@ -16,6 +16,13 @@ $image-text: #FFFFFF;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
+/*************************************************************
+Navigation link effects found on Codrops at
+http://tympanus.net/codrops/2013/08/06/creative-link-effects/
+and have been modified to work with this
+project in a nav bar.
+*************************************************************/
+
 /*******************************
 320PX RESPONSIVE MEDIA QUERY
 *******************************/
@@ -46,10 +53,6 @@ $image-text: #FFFFFF;
     @include full-images('../images/admin1920.jpg')
   }
 
-  a:hover {
-    text-decoration: none;
-  }
-
   nav a {
   	position: relative;
   	display: inline-block;
@@ -60,27 +63,26 @@ $image-text: #FFFFFF;
   	text-transform: uppercase;
   	letter-spacing: 1px;
   	font-weight: 400;
+  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
   	font-size: 1.35em;
+    padding: 0 20px;
+  	height: 45px;
+  	line-height: 45px;
   }
 
   nav a:hover,
   nav a:focus {
   	outline: none;
+    text-decoration: none;
     color: $image-text;
   }
 
-  .cl-effect-14 a {
-  	padding: 0 20px;
-  	height: 45px;
-  	line-height: 45px;
-  }
-
-  .cl-effect-14 a::before,
-  .cl-effect-14 a::after {
+  .nav-effect a::before,
+  .nav-effect a::after {
   	position: absolute;
   	width: 45px;
   	height: 2px;
-  	background: #fff;
+  	background: $image-text;
   	content: '';
   	opacity: 0.2;
   	-webkit-transition: all 0.3s;
@@ -89,7 +91,7 @@ $image-text: #FFFFFF;
   	pointer-events: none;
   }
 
-  .cl-effect-14 a::before {
+  .nav-effect a::before {
   	top: 0;
   	left: 0;
   	-webkit-transform: rotate(90deg);
@@ -100,7 +102,7 @@ $image-text: #FFFFFF;
   	transform-origin: 0 0;
   }
 
-  .cl-effect-14 a::after {
+  .nav-effect a::after {
   	right: 0;
   	bottom: 0;
   	-webkit-transform: rotate(90deg);
@@ -111,28 +113,64 @@ $image-text: #FFFFFF;
   	transform-origin: 100% 0;
   }
 
-  .cl-effect-14 a:hover::before,
-  .cl-effect-14 a:hover::after,
-  .cl-effect-14 a:focus::before,
-  .cl-effect-14 a:focus::after {
+  .nav-effect a:hover::before,
+  .nav-effect a:hover::after,
+  .nav-effect a:focus::before,
+  .nav-effect a:focus::after {
   	opacity: 1;
   }
 
-  .cl-effect-14 a:hover::before,
-  .cl-effect-14 a:focus::before {
+  .nav-effect a:hover::before,
+  .nav-effect a:focus::before {
   	left: 50%;
   	-webkit-transform: rotate(0deg) translateX(-50%);
   	-moz-transform: rotate(0deg) translateX(-50%);
   	transform: rotate(0deg) translateX(-50%);
   }
 
-  .cl-effect-14 a:hover::after,
-  .cl-effect-14 a:focus::after {
+  .nav-effect a:hover::after,
+  .nav-effect a:focus::after {
   	right: 50%;
   	-webkit-transform: rotate(0deg) translateX(50%);
   	-moz-transform: rotate(0deg) translateX(50%);
   	transform: rotate(0deg) translateX(50%);
   }
+
+  .nav-map a:nth-child(2)::before {
+    opacity: 1;
+  	top: 0;
+  	left: 24%;
+    -webkit-transform: rotate(0deg);
+  	-moz-transform: rotate(0deg);
+  	transform: rotate(0deg);
+  }
+
+  .nav-map a:nth-child(2)::after {
+    opacity: 1;
+  	right: 26%;
+  	bottom: 0;
+    -webkit-transform: rotate(0deg);
+  	-moz-transform: rotate(0deg);
+  	transform: rotate(0deg);
+  }
+
+  .nav-portfolios a:nth-child(3)::before {
+  opacity: 1;
+	top: 0;
+	left: 39%;
+  -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.nav-portfolios a:nth-child(3)::after {
+  opacity: 1;
+	right: 37%;
+	bottom: 0;
+  -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
 
   .foot-top {
     margin-top: 30vh;
