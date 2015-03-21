@@ -28,7 +28,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url('../images/graydogs.png')
+    background: linear-gradient(rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0.5)), url('../images/graydogs.png')
   }
 
   .header-img {

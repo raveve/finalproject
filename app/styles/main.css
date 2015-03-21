@@ -10,45 +10,39 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url("../images/graydogs.png"); }
-
+    background: linear-gradient(rgba(204, 204, 204, 0.5), rgba(204, 204, 204, 0.5)), url('../images/graydogs.png'); }
   .header-img {
-    background: url("../images/homepg1920.jpg") no-repeat center center fixed;
+    background: url('../images/homepg1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .about-img {
-    background: url("../images/homemap600.jpg") no-repeat center center fixed;
+    background: url('../images/homemap600.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .notfound-img {
-    background: url("../images/404img1920.jpg") no-repeat center center fixed;
+    background: url('../images/404img1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .notfound-text {
     margin-top: 45vh;
     color: #FFFFFF;
     text-align: center; }
-
   .admin-img {
-    background: url("../images/admin1920.jpg") no-repeat center center fixed;
+    background: url('../images/admin1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   nav a {
     position: relative;
     display: inline-block;
@@ -64,15 +58,11 @@ project in a nav bar.
     padding: 0 20px;
     height: 45px;
     line-height: 45px; }
-
-  nav a:hover,
-  nav a:focus {
+  nav a:hover, nav a:focus {
     outline: none;
     text-decoration: none;
     color: #FFFFFF; }
-
-  .nav-effect a::before,
-  .nav-effect a::after {
+  .nav-effect a::before, .nav-effect a::after {
     position: absolute;
     width: 45px;
     height: 2px;
@@ -83,7 +73,6 @@ project in a nav bar.
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     pointer-events: none; }
-
   .nav-effect a::before {
     top: 0;
     left: 0;
@@ -93,7 +82,6 @@ project in a nav bar.
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     transform-origin: 0 0; }
-
   .nav-effect a::after {
     right: 0;
     bottom: 0;
@@ -103,27 +91,18 @@ project in a nav bar.
     -webkit-transform-origin: 100% 0;
     -moz-transform-origin: 100% 0;
     transform-origin: 100% 0; }
-
-  .nav-effect a:hover::before,
-  .nav-effect a:hover::after,
-  .nav-effect a:focus::before,
-  .nav-effect a:focus::after {
+  .nav-effect a:hover::before, .nav-effect a:hover::after, .nav-effect a:focus::before, .nav-effect a:focus::after {
     opacity: 1; }
-
-  .nav-effect a:hover::before,
-  .nav-effect a:focus::before {
+  .nav-effect a:hover::before, .nav-effect a:focus::before {
     left: 50%;
     -webkit-transform: rotate(0deg) translateX(-50%);
     -moz-transform: rotate(0deg) translateX(-50%);
     transform: rotate(0deg) translateX(-50%); }
-
-  .nav-effect a:hover::after,
-  .nav-effect a:focus::after {
+  .nav-effect a:hover::after, .nav-effect a:focus::after {
     right: 50%;
     -webkit-transform: rotate(0deg) translateX(50%);
     -moz-transform: rotate(0deg) translateX(50%);
     transform: rotate(0deg) translateX(50%); }
-
   .nav-map a:nth-child(2)::before {
     opacity: 1;
     top: 0;
@@ -131,7 +110,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-map a:nth-child(2)::after {
     opacity: 1;
     right: 26%;
@@ -139,7 +117,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-portfolios a:nth-child(3)::before {
     opacity: 1;
     top: 0;
@@ -147,7 +124,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-portfolios a:nth-child(3)::after {
     opacity: 1;
     right: 37%;
@@ -155,43 +131,34 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .foot-top {
     margin-top: 30vh; }
     .foot-top a {
       color: #FFFFFF; }
     .foot-top a:hover, .foot-top a:focus {
       text-decoration: none; }
-
   .angular-google-map-container {
     margin-top: 5vh;
     height: 75vh;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
   .home-logo {
     margin-top: 20vh; }
     .home-logo img {
       width: 80%; }
-
   .notfound-logo {
     margin-top: 10vh; }
     .notfound-logo img {
       width: 40%; }
-
   .home-search {
     margin-top: 45vh; }
-
   .home-about {
     margin-top: 15vh; }
-
   .home-create {
     margin-top: 5vh; }
-
   .list-search {
     margin-top: 10vh; }
-
   .list-item {
     margin-top: 10vh; }
     .list-item img {
@@ -202,10 +169,8 @@ project in a nav bar.
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .list-item button {
       margin-top: 2vh; }
-
   .edit {
     margin-top: 10vh; }
-
   .portfolio {
     margin-top: 15vh; }
     .portfolio img {
@@ -213,40 +178,39 @@ project in a nav bar.
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
   .portfolio-bio {
     margin-top: 5vh; }
-
   .new-groomer {
     margin-top: 10vh; } }
+
 /*******************************
 640PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 640px) {
   .about-img {
-    background: url("../images/homemap800.jpg") no-repeat center center fixed;
+    background: url('../images/homemap800.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .home-logo img {
     width: 60%; } }
+
 /*******************************
 960PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 960px) {
   .about-img {
-    background: url("../images/homemap1280.jpg") no-repeat center center fixed;
+    background: url('../images/homemap1280.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .home-logo img {
     width: 50%; } }
+
 /*******************************
 1280PX RESPONSIVE MEDIA QUERY
 *******************************/
@@ -255,11 +219,9 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 1280px) {
   .about-img {
-    background: url("../images/homemap1920.jpg") no-repeat center center fixed;
+    background: url('../images/homemap1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; } }
-
-/*# sourceMappingURL=main.css.map */
