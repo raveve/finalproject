@@ -21,7 +21,7 @@ $image-text: #FFFFFF;
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background-image: url('../images/squared_metal.png')
+    background-image: url('../images/graydogs.png')
   }
 
   .header-img {
@@ -70,8 +70,14 @@ $image-text: #FFFFFF;
     color: $image-text;
   }
 
-  .foot-double-up {
+  .foot-top {
     margin-top: 30vh;
+    a {
+      color: $image-text;
+    }
+    a:hover, a:focus {
+      text-decoration: none;
+    }
   }
 
   .angular-google-map-container {
