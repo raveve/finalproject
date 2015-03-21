@@ -20,8 +20,8 @@
           $location.path('/fullview/' + index);
         };
 
-        $scope.date = new Date();
-        
+        $scope.newReview = { date: new Date() };
+
         portCtrl.addReview = function (newReview, profile) {
           PortfoliosService.addReview(newReview, profile);
           $scope.newReview = {};
