@@ -52,12 +52,16 @@
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
     font-size: 1.35em; }
   nav a:hover, nav a:focus {
-    outline: none; }
+    outline: none;
+    color: #FFFFFF; }
   .foot-double-up {
     margin-top: 30vh; }
   .angular-google-map-container {
     margin-top: 5vh;
-    height: 75vh; }
+    height: 75vh;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
   .cl-effect-14 a {
     padding: 0 20px;
     height: 45px;
@@ -123,7 +127,10 @@
     margin-top: 10vh; }
     .list-item img {
       display: inline;
-      width: 100%; }
+      width: 100%;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .list-item button {
       margin-top: 2vh; }
   .edit {
@@ -131,7 +138,10 @@
   .portfolio {
     margin-top: 15vh; }
     .portfolio img {
-      width: 100%; }
+      width: 100%;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
   .portfolio-bio {
     margin-top: 5vh; }
   .new-groomer {
