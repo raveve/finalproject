@@ -227,10 +227,6 @@ project in a nav bar.
     }
   }
 
-  .edit {
-    margin-top: 5vh;
-  }
-
   .portfolio {
     margin-top: 10vh;
     img {
@@ -333,6 +329,10 @@ project in a nav bar.
     img {
       width: 60%;
     }
+  }
+
+  .review-btn {
+    margin-bottom: 5vh;
   }
 
 }

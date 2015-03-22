@@ -200,9 +200,6 @@ project in a nav bar.
     .list-item button {
       margin-top: 2vh; }
 
-  .edit {
-    margin-top: 5vh; }
-
   .portfolio {
     margin-top: 10vh; }
     .portfolio img {
@@ -291,7 +288,10 @@ project in a nav bar.
     background-size: cover; }
 
   .home-logo img {
-    width: 60%; } }
+    width: 60%; }
+
+  .review-btn {
+    margin-bottom: 5vh; } }
 /*******************************
 960PX RESPONSIVE MEDIA QUERY
 *******************************/
