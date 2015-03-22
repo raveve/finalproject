@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-md-3 col-md-offset-1 admin-login">
           <h2>Administrator Login</h2>
-          <form class="new-profile-form">
+          <form class="new-profile-form buttons">
             <div class="form-group">
               <label for="">Username</label>
               <input type="text" ng-model="adminCtrl.userName" required>
@@ -32,7 +32,7 @@
               <input type="password" ng-model="adminCtrl.password" required>
             </div>
             <button type="submit" class="btn btn-default pull-right" ng-click="adminCtrl.login(adminCtrl.userName, adminCtrl.password)">
-              Login
+              <i class="fa fa-user-secret fa-fw fa-lg"></i>
             </button>
           </form>
         </div>

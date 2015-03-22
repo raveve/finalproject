@@ -232,6 +232,18 @@ project in a nav bar.
     }
   }
 
+  .buttons button {
+    background: transparent;
+    border: solid 1px $image-text;
+  }
+
+  .buttons button:hover,
+  .buttons button:active,
+  .buttons button:focus {
+    background: #BFBDB1;
+    border: solid 1px $image-text;
+  }
+
   .portfolio {
     margin-top: 10vh;
     img {
@@ -242,6 +254,28 @@ project in a nav bar.
 
   .portfolio-bio {
     margin-top: 5vh;
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 3px;
+  }
+
+  .reviews p {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .review-title {
+    margin-left: 2%;
+    width: 75%
+  }
+
+  .reviews h4 {
+    display: inline-block;
+  }
+
+  .paw-review {
+    width: 20%;
+    text-align: right;
   }
 
   .new-groomer {

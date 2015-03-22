@@ -27,7 +27,7 @@
   </div>
   <div class="row">
     <div class="col-md-3 col-md-offset-9">
-      <div class="btn-group" role="group" aria-label="...">
+      <div class="btn-group buttons" role="group" aria-label="...">
         <button type="button" class="btn btn-default" ng-click="predicate = 'name'; reverse=false">
           <i class="fa fa-sort-alpha-asc fa-fw"></i>
         </button>
@@ -38,16 +38,18 @@
     </div>
   </div>
   <div class="row" ng-repeat="profile in adminCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
-    <div class="col-md-3 col-md-offset-2 list-item">
+    <div class="col-md-3 col-md-offset-2 list-item buttons">
       <img src="{{profile.mainimg}}">
       <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
-        Delete
+        <i class="fa fa-trash-o fa-fw fa-lg"></i>
       </button>
       <a href="#/edit/{{profile._id}}">
-        <button class="btn btn-default">Edit</button>
+        <button class="btn btn-default">
+          <i class="fa fa-pencil-square-o fa-fw fa-lg"></i>
+        </button>
       </a>
       <button class="btn btn-default" ng-hide="profile.approved" ng-click="adminCtrl.approveGroomer(profile)">
-        Approve
+        <i class="fa fa-thumbs-o-up fa-fw fa-lg"></i>
       </button>
     </div>
       <div class="col-md-2 list-item">
