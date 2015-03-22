@@ -57,7 +57,7 @@ project in a nav bar.
   nav a {
   	position: relative;
   	display: inline-block;
-  	margin: 15px 25px;
+  	margin: 20px 15px;
   	outline: none;
   	color: $image-text;
   	text-decoration: none;
@@ -197,11 +197,15 @@ project in a nav bar.
     }
   }
 
-  .notfound-logo {
-    margin-top: 10vh;
+  .nav-logo {
+    margin-top: 2vh;
     img {
-      width: 40%;
+      width: 100%;
     }
+  }
+
+  .admin-login {
+    margin-top: 15vh;
   }
 
   .home-search {
@@ -250,7 +254,7 @@ project in a nav bar.
   and have been modified to work with this form and application.
   *************************************************************/
 
-  .new-profile-form{
+  .new-profile-form {
     padding: 2%;
   }
 
