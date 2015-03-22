@@ -20,9 +20,10 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-5 col-md-offset-7 home-search">
-      <form action="" ng-submit="portCtrl.homeSearch(searchTerm)">
-        <input type="text" ng-model="searchTerm"  placeholder="Search Groomer Portfolios...">
+    <div class="col-md-5 col-md-offset-7 home-search new-profile-form">
+      <form action="" class="form-group" ng-submit="portCtrl.homeSearch(searchTerm)">
+        <label for="">Search Groomer Portfolios</label>
+        <input type="text" ng-model="searchTerm">
       </form>
     </div>
   </div>

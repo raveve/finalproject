@@ -29,7 +29,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png')
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
   }
 
   .header-img {
@@ -184,8 +184,8 @@ project in a nav bar.
   }
 
   .angular-google-map-container {
-    margin-top: 5vh;
-    height: 75vh;
+    margin-top: 0;
+    height: 70vh;
     @include box-shadow;
   }
 
@@ -205,50 +205,6 @@ project in a nav bar.
 
   .home-search {
     margin-top: 35vh;
-    input {
-      background: transparent;
-      border: 0;
-      border-bottom: solid 2px $image-text;
-      outline: none;
-    }
-  /*   text-transform: uppercase;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-align: center;
-  input {
-    width: 500px;
-    height: 100px;
-    border: 3px solid $secondary-color;
-    font-size: 75px;
-    border-radius: 5px;
-    box-shadow: 7px 0px 0px white, 0px 7px 0px white, 7px 0px 0px white, 7px 7px 0px white, -7px 0px 0px white, 0px -7px 0px white, -7px 7px 0px white, -7px -7px 0px white, 7px -7px 0px white;
-    outline: none;
-    padding-left: 25px;
-    color: white;
-  }
-  input:focus {
-    border-color: $image-text;
-    background-color: rgba(191, 189, 177, 0.2);
-    color: $image-text;
-  }
-  .placeholder {
-    font-size: 75px;
-    margin-top: -100px;
-    pointer-events: none;
-    position: absolute;
-    margin-left: -399px;
-    color: $secondary-color;
-  }
-  input:focus ~ .placeholder {
-    background-color: $secondary-color;
-    color: $image-text;
-    line-height: 10px;
-    font-size: 33px;
-    padding: 3px;
-  } */
   }
 
   .home-about {
@@ -256,10 +212,6 @@ project in a nav bar.
   }
 
   .home-create {
-    margin-top: 5vh;
-  }
-
-  .list-search {
     margin-top: 5vh;
   }
 
@@ -303,22 +255,22 @@ project in a nav bar.
 
   .new-profile-form{
     padding: 2%;
-}
+  }
 
-.new-profile-form div {
+  .new-profile-form div {
     padding:0;
     margin:0;
-}
+  }
 
-.new-profile-form .form-group {
+  .new-profile-form .form-group {
     display: block;
     padding: 9px;
     border: 2px solid $image-text;
     margin-bottom: 4vh;
     border-radius: 3px;
-}
+  }
 
-.new-profile-form .form-group > label {
+  .new-profile-form .form-group > label {
     display: block;
     float: left;
     margin-top: -19px;
@@ -327,11 +279,11 @@ project in a nav bar.
     height: 1.5em;
     padding: 2px 5px 2px 5px;
     color: $secondary-color;
-}
+  }
 
-.new-profile-form input,
-.new-profile-form textarea
-{
+  .new-profile-form input,
+  .new-profile-form textarea
+  {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -344,9 +296,9 @@ project in a nav bar.
     line-height: 25px;
     font-size: 16px;
     padding: 0;
-}
+  }
 
-.new-profile-form .form-group > span {
+  .new-profile-form .form-group > span {
     background: $secondary-color;
     display: block;
     padding: 3px;
@@ -354,12 +306,18 @@ project in a nav bar.
     text-align: center;
     color: $image-text;
     font-size: 11px;
-}
+  }
 
-.new-profile-form textarea {
+  .new-profile-form textarea {
     resize:none;
     height: 10vh;
-}
+  }
+
+  .list-search {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
 }
 
