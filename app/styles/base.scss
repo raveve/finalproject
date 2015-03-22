@@ -186,6 +186,7 @@ project in a nav bar.
   .angular-google-map-container {
     margin-top: 0;
     height: 70vh;
+    border-radius:10px;
     @include box-shadow;
   }
 
