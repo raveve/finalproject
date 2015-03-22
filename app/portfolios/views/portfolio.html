@@ -18,33 +18,32 @@
   </nav>
   </div>
   <div class="row">
-    <div class="col-md-3 col-md-offset-2 portfolio buttons">
+    <div class="col-md-3 col-md-offset-2 portfolio polaroid polaroid-profile">
       <img src="{{portCtrl.profile.mainimg}}">
+    </div>
+      <div class="col-md-3 portfolio">
+        <p>{{portCtrl.profile.name}}</p>
+        <p><a href="{{portCtrl.profile.companyURL}}">{{portCtrl.profile.company}}</a></p>
+        <p>{{portCtrl.profile.address}}</p>
+        <p>{{portCtrl.profile.city}}, {{portCtrl.profile.state}} {{portCtrl.profile.zip}}</p>
+      </div>
+      <div class="col-md-3 list-paw portfolio">
+        <h4><i ng-repeat="i in portCtrl.getNumber(portCtrl.profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h4>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-md-offset-2 buttons">
       <p><i class="fa fa-phone fa-fw"></i> <a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
       <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{portCtrl.profile.email}}" target="_blank">{{portCtrl.profile.email}}</a></p>
       <a href="#" onclick="javascript:window.open('mailto:?subject=Check out this groomer\'s portfolio&body=information interesting: ' + window.location);return false;" target="_blank">
-
         <button class="btn btn-default"><i class="fa fa-share-square-o fa-fw"></i>Share profile</button>
       </a>
-    </div>
-    <div class="col-md-3 portfolio">
-      <p>{{portCtrl.profile.name}}</p>
-      <p><a href="{{portCtrl.profile.companyURL}}">{{portCtrl.profile.company}}</a></p>
-      <p>{{portCtrl.profile.address}}</p>
-      <p>{{portCtrl.profile.city}}, {{portCtrl.profile.state}} {{portCtrl.profile.zip}}</p>
-    </div>
-    <div class="col-md-2 portfolio">
-      <h4><i ng-repeat="i in portCtrl.getNumber(portCtrl.profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h4>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <div class="portfolio-bio">
-        <div class="panel-body">
-          <h3>Bio</h3>
-          <p>{{portCtrl.profile.bio}}</p>
-        </div>
-      </div>
+      <h3>Bio</h3>
+      <p>{{portCtrl.profile.bio}}</p>
     </div>
   </div>
   <div class="row">
@@ -110,13 +109,13 @@
         </div>
         <div class="form-group">
           <label for="">Paw Rating</label>
-          <select class="form-control" ng-model="newReview.rating" required>
-            <option value="1">1 Paw</option>
-            <option value="2">2 Paws</option>
-            <option value="3">3 Paws</option>
-            <option value="4">4 Paws</option>
-            <option value="5">5 Paws</option>
-          </select>
+            <select class="form-control" ng-model="newReview.rating" required>
+              <option value="1">1 Paw</option>
+              <option value="2">2 Paws</option>
+              <option value="3">3 Paws</option>
+              <option value="4">4 Paws</option>
+              <option value="5">5 Paws</option>
+            </select>
         </div>
         <div class="form-group">
           <label for="">Review</label>
@@ -130,13 +129,12 @@
   </div>
   <div class="row" ng-repeat="review in portCtrl.profile.reviews">
     <div class="col-md-offset-2">
-    <div class="col-md-9 reviews">
+    <div class="col-md-9 reviews rectangle-speech-border">
       <h4 class="review-title">{{review.title}}</h4>
       <h4 class="paw-review"><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-lg fa-fw"></i></h4>
       <p>Reviewer: {{review.name}}</p>
       <p>Posted: {{review.date | date:'MMM d, y'}}</p>
       <p>{{review.review}}</p>
-      <hr>
     </div>
     </div>
   </div>

@@ -31,13 +31,13 @@
       <div ng-repeat="profile in portCtrl.profiles | filter:searchTerm">
         <ui-gmap-marker idKey="profile._id" coords="profile.coords" icon="icon">
           <ui-gmap-window options="windowOptions" closeClick="closeClick()">
-            <div class="map-window">
+            <div class="map-window polaroid">
               <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}" alt=""></a>
               <div class="map-groomer-detail">
+                <p>{{profile.name}}</p>
+                <p>{{profile.company}}</p>
                 <p>{{profile.address}}</p>
                 <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
-                <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
-                <p><a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
               </div>
             </div>
           </ui-gmap-window>

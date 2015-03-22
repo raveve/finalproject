@@ -38,19 +38,8 @@
     </div>
   </div>
   <div class="row" ng-repeat="profile in adminCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
-    <div class="col-md-3 col-md-offset-2 list-item buttons">
+    <div class="col-md-3 col-md-offset-2 list-item buttons polaroid">
       <img src="{{profile.mainimg}}">
-      <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
-        <i class="fa fa-trash-o fa-fw fa-lg"></i>
-      </button>
-      <a href="#/edit/{{profile._id}}">
-        <button class="btn btn-default">
-          <i class="fa fa-pencil-square-o fa-fw fa-lg"></i>
-        </button>
-      </a>
-      <button class="btn btn-default" ng-hide="profile.approved" ng-click="adminCtrl.approveGroomer(profile)">
-        <i class="fa fa-thumbs-o-up fa-fw fa-lg"></i>
-      </button>
     </div>
       <div class="col-md-2 list-item">
         <p>{{profile.name}}</p>
@@ -59,6 +48,19 @@
         <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
         <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
         <p><a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
+      </div>
+      <div class="col-md-3 list-item">
+        <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
+          <i class="fa fa-trash-o fa-fw fa-lg"></i>
+        </button>
+        <a href="#/edit/{{profile._id}}">
+          <button class="btn btn-default">
+            <i class="fa fa-pencil-square-o fa-fw fa-lg"></i>
+          </button>
+        </a>
+        <button class="btn btn-default" ng-hide="profile.approved" ng-click="adminCtrl.approveGroomer(profile)">
+          <i class="fa fa-thumbs-o-up fa-fw fa-lg"></i>
+        </button>
       </div>
   </div>
 </div>
