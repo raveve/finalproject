@@ -30,7 +30,7 @@
         </address>
         <p><i class="fa fa-phone fa-fw"></i> <a href="tel:{{portCtrl.profile.phone}}">{{portCtrl.profile.phone}}</a></p>
         <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{portCtrl.profile.email}}" target="_blank">{{portCtrl.profile.email}}</a></p>
-        <a href="#" onclick="javascript:window.open('mailto:?subject=Check out this groomer\'s portfolio&body=information interesting: ' + window.location);return false;" target="_blank">
+        <a href="#" onclick="javascript:window.open('mailto:?subject=Check out this groomer\'s portfolio&body= ' + window.location);return false;" target="_blank">
           <button class="btn btn-default"><i class="fa fa-share-square-o fa-fw"></i> Share Portfolio</button>
         </a>
       </div>
@@ -89,9 +89,20 @@
       <h2>Reviews</h2>
     </div>
   </div>
+  <div class="row" ng-repeat="review in portCtrl.profile.reviews">
+    <div class="col-md-offset-2">
+    <div class="col-md-9 reviews rectangle-speech-border">
+      <h4 class="review-title">{{review.title}}</h4>
+      <h4 class="paw-review"><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-lg fa-fw"></i></h4>
+      <p><strong>Reviewer:</strong> {{review.name}}</p>
+      <p><strong>Posted:</strong> {{review.date | date:'MMM d, y'}}</p>
+      <p>{{review.review}}</p>
+    </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 new-profile-form buttons">
-      <button class="btn btn-default review-btn" ng-click="showReviewForm = !showReviewForm">
+      <button class="btn btn-default review-btn center-block" ng-click="showReviewForm = !showReviewForm">
         <i class="fa fa-comment-o fa-fw"></i> Add Review
       </button>
       <form ng-submit="portCtrl.addReview(newReview, portCtrl.profile)" ng-show="showReviewForm">
@@ -121,17 +132,6 @@
           Submit Review
         </button>
       </form>
-    </div>
-  </div>
-  <div class="row" ng-repeat="review in portCtrl.profile.reviews">
-    <div class="col-md-offset-2">
-    <div class="col-md-9 reviews rectangle-speech-border">
-      <h4 class="review-title">{{review.title}}</h4>
-      <h4 class="paw-review"><i ng-repeat="i in portCtrl.getNumber(review.rating) track by $index" class="fa fa-paw fa-lg fa-fw"></i></h4>
-      <p><strong>Reviewer:</strong> {{review.name}}</p>
-      <p><strong>Posted:</strong> {{review.date | date:'MMM d, y'}}</p>
-      <p>{{review.review}}</p>
-    </div>
     </div>
   </div>
 </div>

@@ -48,7 +48,7 @@
     <div class="col-md-3 col-md-offset-3 list-item polaroid">
       <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
     </div>
-    <div class="col-md-2 list-item">
+    <div class="col-md-2 col-md-offset-1 list-item">
       <h4>{{profile.name}}</h4>
       <address>
         <strong>{{profile.company}}</strong><br>
@@ -58,7 +58,7 @@
       <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
       <p><a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
     </div>
-    <div class="col-md-2 col-md-offset-1 list-item">
+    <div class="col-md-2 list-item text-right">
       <h4><i ng-repeat="i in portCtrl.getNumber(profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h4>
     </div>
   </div>
