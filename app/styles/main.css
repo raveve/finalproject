@@ -9,70 +9,60 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
-    font-family: "Arimo", sans-serif;
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    font-family: 'Arimo', sans-serif;
     color: #000000; }
     body a {
       color: #000000; }
     body a:hover, body a:active, body a:focus {
       color: #333333; }
-
   .header-img {
-    background: url("../images/homepg1920.jpg") no-repeat center center fixed;
+    background: url('../images/homepg1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .about-img {
-    background: url("../images/homemap600.jpg") no-repeat center center fixed;
+    background: url('../images/homemap600.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .notfound-img {
-    background: url("../images/404img1920.jpg") no-repeat center center fixed;
+    background: url('../images/404img1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .notfound-text {
     margin-top: 45vh;
     color: #FFFFFF;
     text-align: center; }
-
   .about-section {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
     border: 2px solid #FFFFFF;
-    border-radius: 5px; }
-
+    border-radius: 10px; }
   .home-create button {
     margin-top: 5vh;
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
     border: 2px solid #FFFFFF;
     color: #000000; }
-
   .home-create a:focus, .home-create a:active, .home-create a:hover {
     text-decoration: none; }
-
   .home-create button:focus, .home-create button:active, .home-create button:hover {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
     border: 2px solid #FFFFFF;
     color: #FFFFFF; }
-
   .admin-img {
-    background: url("../images/admin1920.jpg") no-repeat center center fixed;
+    background: url('../images/admin1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   nav a {
     position: relative;
     display: inline-block;
@@ -88,15 +78,11 @@ project in a nav bar.
     padding: 0 20px;
     height: 45px;
     line-height: 45px; }
-
-  nav a:hover,
-  nav a:focus {
+  nav a:hover, nav a:focus {
     outline: none;
     text-decoration: none;
     color: #FFFFFF; }
-
-  .nav-effect a::before,
-  .nav-effect a::after {
+  .nav-effect a::before, .nav-effect a::after {
     position: absolute;
     width: 45px;
     height: 2px;
@@ -107,7 +93,6 @@ project in a nav bar.
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     pointer-events: none; }
-
   .nav-effect a::before {
     top: 0;
     left: 0;
@@ -117,7 +102,6 @@ project in a nav bar.
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     transform-origin: 0 0; }
-
   .nav-effect a::after {
     right: 0;
     bottom: 0;
@@ -127,27 +111,18 @@ project in a nav bar.
     -webkit-transform-origin: 100% 0;
     -moz-transform-origin: 100% 0;
     transform-origin: 100% 0; }
-
-  .nav-effect a:hover::before,
-  .nav-effect a:hover::after,
-  .nav-effect a:focus::before,
-  .nav-effect a:focus::after {
+  .nav-effect a:hover::before, .nav-effect a:hover::after, .nav-effect a:focus::before, .nav-effect a:focus::after {
     opacity: 1; }
-
-  .nav-effect a:hover::before,
-  .nav-effect a:focus::before {
+  .nav-effect a:hover::before, .nav-effect a:focus::before {
     left: 50%;
     -webkit-transform: rotate(0deg) translateX(-50%);
     -moz-transform: rotate(0deg) translateX(-50%);
     transform: rotate(0deg) translateX(-50%); }
-
-  .nav-effect a:hover::after,
-  .nav-effect a:focus::after {
+  .nav-effect a:hover::after, .nav-effect a:focus::after {
     right: 50%;
     -webkit-transform: rotate(0deg) translateX(50%);
     -moz-transform: rotate(0deg) translateX(50%);
     transform: rotate(0deg) translateX(50%); }
-
   .nav-map a:nth-child(2)::before {
     opacity: 1;
     top: 0;
@@ -155,7 +130,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-map a:nth-child(2)::after {
     opacity: 1;
     right: 23%;
@@ -163,7 +137,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-portfolios a:nth-child(3)::before {
     opacity: 1;
     top: 0;
@@ -171,7 +144,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-portfolios a:nth-child(3)::after {
     opacity: 1;
     right: 37%;
@@ -179,7 +151,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-admin a:nth-child(1)::before {
     opacity: 1;
     top: 0;
@@ -187,7 +158,6 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .nav-admin a:nth-child(1)::after {
     opacity: 1;
     right: 29%;
@@ -195,39 +165,45 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
-
   .foot-top {
     margin-top: 30vh; }
     .foot-top a {
       color: #FFFFFF; }
     .foot-top a:hover, .foot-top a:focus {
       text-decoration: none; }
-
   /*************************************
-  Polaroid image inspiration from:
-  http://codepen.io/andrewboyd/pen/bxwyG
-  and modified for this project
-  **************************************/
+Polaroid image inspiration from:
+http://codepen.io/andrewboyd/pen/bxwyG
+and modified for this project
+**************************************/
   @-webkit-keyframes fade-in {
     0% {
       opacity: 0; }
+
     100% {
       opacity: 1; } }
+
   @-moz-keyframes fade-in {
     0% {
       opacity: 0; }
+
     100% {
       opacity: 1; } }
+
   @-o-keyframes fade-in {
     0% {
       opacity: 0; }
+
     100% {
       opacity: 1; } }
+
   @keyframes fade-in {
     0% {
       opacity: 0; }
+
     100% {
       opacity: 1; } }
+
   .polaroid {
     width: 220px;
     height: 240px;
@@ -240,7 +216,6 @@ project in a nav bar.
     clear: both; }
     .polaroid img {
       width: 100%; }
-
   .polaroid-profile img {
     -webkit-animation: fade-in 7s ease-in;
     -moz-animation: fade-in 7s ease-in;
@@ -250,33 +225,26 @@ project in a nav bar.
     -moz-animation-iteration-count: 1;
     -o-animation-iteration-count: 1;
     animation-iteration-count: 1; }
-
   .angular-google-map-container {
     margin-top: 0;
     height: 70vh;
     border: solid 1px #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 0 7px -2px #000; }
-
   .home-logo {
     margin-top: 20vh; }
     .home-logo img {
       width: 80%; }
-
   .nav-logo {
     margin-top: 2vh; }
     .nav-logo img {
       width: 100%; }
-
   .admin-login {
     margin-top: 15vh; }
-
   .home-search {
     margin-top: 35vh; }
-
   .home-about {
     margin-top: 20vh; }
-
   .list-item {
     margin-top: 5vh; }
     .list-item img {
@@ -284,19 +252,14 @@ project in a nav bar.
       width: 100%; }
     .list-item button {
       margin-top: 2vh; }
-
   .buttons button {
     background: transparent;
     border: 1px solid #FFFFFF;
     color: #000000; }
-
-  .buttons button:hover,
-  .buttons button:active,
-  .buttons button:focus {
+  .buttons button:hover, .buttons button:active, .buttons button:focus {
     background: #BFBDB1;
     border: 1px solid #FFFFFF;
     color: #000000; }
-
   .portfolio {
     margin-top: 10vh; }
     .portfolio img {
@@ -304,36 +267,29 @@ project in a nav bar.
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
   .portfolio-bio {
     margin-top: 5vh;
     background: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 3px; }
-
   .reviews p {
     margin-left: 5%;
     width: 90%; }
-
   .review-title {
     margin-left: 2%;
     width: 75%; }
-
   .reviews h4 {
     display: inline-block; }
-
   .paw-review {
     width: 20%;
     text-align: right; }
-
   .new-groomer {
     margin-top: 1vh; }
-
   /********************************************************
-    RECTANGLE-BORDER STYLE BUBBLE WITH CURVE
-    Modified from the version by Nicolas Gallagher on
-    http://nicolasgallagher.com/pure-css-speech-bubbles/
-  *********************************************************/
+  RECTANGLE-BORDER STYLE BUBBLE WITH CURVE
+  Modified from the version by Nicolas Gallagher on
+  http://nicolasgallagher.com/pure-css-speech-bubbles/
+*********************************************************/
   .rectangle-speech-border {
     position: relative;
     padding: 30px 10px;
@@ -344,7 +300,6 @@ project in a nav bar.
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px; }
-
   /* creates larger curve */
   .rectangle-speech-border:before {
     content: "";
@@ -362,7 +317,6 @@ project in a nav bar.
     -moz-border-radius-bottomright: 80px 50px;
     border-bottom-right-radius: 80px 50px;
     display: block; }
-
   /* creates smaller curve */
   .rectangle-speech-border:after {
     content: "";
@@ -378,7 +332,6 @@ project in a nav bar.
     -moz-border-radius-bottomright: 40px 50px;
     border-bottom-right-radius: 40px 50px;
     display: block; }
-
   /* creates a small circle to produce a rounded point where the two curves meet */
   .rectangle-speech-border > :first-child:before {
     content: "";
@@ -391,7 +344,6 @@ project in a nav bar.
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 5px; }
-
   /*************************************************************
   New profile form fields styles found on Sanwebe.com at
   http://www.sanwebe.com/2014/08/css-html-forms-designs
@@ -399,18 +351,15 @@ project in a nav bar.
   *************************************************************/
   .new-profile-form {
     padding: 2%; }
-
   .new-profile-form div {
     padding: 0;
     margin: 0; }
-
   .new-profile-form .form-group {
     display: block;
     padding: 9px;
     border: 2px solid #FFFFFF;
     margin-bottom: 4vh;
     border-radius: 3px; }
-
   .new-profile-form .form-group > label {
     display: block;
     float: left;
@@ -420,9 +369,7 @@ project in a nav bar.
     height: 1.5em;
     padding: 2px 5px 2px 5px;
     color: #BFBDB1; }
-
-  .new-profile-form input,
-  .new-profile-form textarea {
+  .new-profile-form input, .new-profile-form textarea {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -435,7 +382,6 @@ project in a nav bar.
     line-height: 25px;
     font-size: 16px;
     padding: 0; }
-
   .new-profile-form .form-group > span {
     background: #BFBDB1;
     display: block;
@@ -444,46 +390,44 @@ project in a nav bar.
     text-align: center;
     color: #FFFFFF;
     font-size: 11px; }
-
   .new-profile-form textarea {
     resize: none;
     height: 10vh; }
-
   .list-search {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0; } }
+
 /*******************************
 640PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 640px) {
   .about-img {
-    background: url("../images/homemap800.jpg") no-repeat center center fixed;
+    background: url('../images/homemap800.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .home-logo img {
     width: 60%; }
-
   .review-btn {
     margin-bottom: 5vh; } }
+
 /*******************************
 960PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 960px) {
   .about-img {
-    background: url("../images/homemap1280.jpg") no-repeat center center fixed;
+    background: url('../images/homemap1280.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-
   .home-logo img {
     width: 50%; } }
+
 /*******************************
 1280PX RESPONSIVE MEDIA QUERY
 *******************************/
@@ -492,11 +436,9 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 1280px) {
   .about-img {
-    background: url("../images/homemap1920.jpg") no-repeat center center fixed;
+    background: url('../images/homemap1920.jpg') no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; } }
-
-/*# sourceMappingURL=main.css.map */

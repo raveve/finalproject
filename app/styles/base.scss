@@ -63,7 +63,7 @@ project in a nav bar.
   .about-section {
     background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
     border: 2px solid $image-text;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .home-create button {
@@ -290,7 +290,7 @@ and modified for this project
     margin-top: 0;
     height: 70vh;
     border: solid 1px $image-text;
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: 0 0 7px -2px #000;
   }
 
