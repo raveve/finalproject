@@ -209,8 +209,21 @@ project in a nav bar.
   .list-polaroid {
     margin-bottom: 5vh; }
 
+  .list-middle {
+    margin-top: 3vh;
+    margin-bottom: 3vh; }
+
   .list-bottom {
     border-bottom: 1px solid #FFFFFF; }
+
+  .portfolio-middle {
+    margin-bottom: 3vh; }
+
+  .portfolio address {
+    margin-bottom: 3vh; }
+
+  .portfolio button {
+    margin-top: 1vh; }
 
   /*************************************
   Polaroid image inspiration from:
@@ -346,13 +359,16 @@ project in a nav bar.
   .map-img {
     display: inline-block; }
     .map-img img {
-      max-width: 150px;
+      margin-left: 15px;
+      margin-bottom: 65px;
+      max-width: 120px;
       max-height: 100px; }
 
   .map-detail {
     display: inline-block;
-    max-width: 125px;
-    margin-left: 1%; }
+    max-width: 175px;
+    margin-left: 1%;
+    margin-top: 20px; }
 
   /********************************************************
     RECTANGLE-BORDER STYLE BUBBLE WITH CURVE

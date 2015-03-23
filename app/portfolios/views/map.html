@@ -1,11 +1,11 @@
 <div class="container-fluid">
 <div class="row">
-  <div class="col-md-3 col-md-offset-1 nav-logo">
+  <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-10 col-xs-offset-1 nav-logo">
     <a href="#/">
       <img src="images/shampoodle-logo-white.png">
     </a>
   </div>
-  <nav class="col-md-5 col-md-offset-3 nav-effect nav-map">
+  <nav class="col-md-5 col-md-offset-3 col-sm-7 col-sm-offset-1 col-xs-8 col-xs-offset-1 nav-effect nav-map">
     <a href="#/#about">
       About
     </a>
@@ -32,17 +32,17 @@
         <ui-gmap-marker idKey="profile._id" coords="profile.coords" icon="icon">
           <ui-gmap-window options="windowOptions" closeClick="closeClick()">
             <div class="map-window">
-              <div class="map-img">
-                <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
-                <h5><i ng-repeat="i in adminCtrl.getNumber(profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h5>
-              </div>
-              <div class="map-detail center-block">
+              <div class="map-detail">
                 <h5>{{profile.name}}</h5>
                 <address>
                   {{profile.company}}<br>
                   {{profile.address}}<br>
                   {{profile.city}}, {{profile.state}} {{profile.zip}}<br>
                 </address>
+              </div>
+              <div class="map-img">
+                <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
+                <h5><i ng-repeat="i in adminCtrl.getNumber(profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h5>
               </div>
             </div>
           </ui-gmap-window>

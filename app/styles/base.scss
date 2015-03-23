@@ -243,8 +243,25 @@ project in a nav bar.
     margin-bottom: 5vh;
   }
 
+  .list-middle {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
   .list-bottom {
     border-bottom: 1px solid $image-text;
+  }
+
+  .portfolio-middle {
+    margin-bottom: 3vh;
+  }
+
+  .portfolio address {
+    margin-bottom: 3vh;
+  }
+
+  .portfolio button {
+    margin-top: 1vh;
   }
 
 /*************************************
@@ -405,15 +422,18 @@ and modified for this project
   .map-img {
     display: inline-block;
     img {
-      max-width: 150px;
+      margin-left: 15px;
+      margin-bottom: 65px;
+      max-width: 120px;
       max-height: 100px;
     }
   }
 
   .map-detail {
     display: inline-block;
-    max-width: 125px;
+    max-width: 175px;
     margin-left: 1%;
+    margin-top: 20px;
   }
 
 /********************************************************
