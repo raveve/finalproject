@@ -27,7 +27,7 @@
   </div>
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <form ng-submit="adminCtrl.editGroomer(adminCtrl.profile)" class="new-profile-form">
+      <form ng-submit="adminCtrl.editGroomer(adminCtrl.profile)" class="new-profile-form buttons">
         <div class="form-group">
           <label for="">Name</label>
           <input type="text" ng-model="adminCtrl.profile.name" required>
@@ -73,15 +73,30 @@
           <textarea rows="3" ng-model="adminCtrl.profile.bio" required></textarea>
         </div>
         <div class="form-group">
-          <label for="">Portfolio Image URLs</label>
+          <label for="">Portfolio Image URL</label>
           <input type="url" ng-model="adminCtrl.profile.portimg1" required>
+        </div>
+        <div class="form-group">
+          <label for="">Portfolio Image URL</label>
           <input type="url" ng-model="adminCtrl.profile.portimg2" required>
+        </div>
+        <div class="form-group">
+          <label for="">Portfolio Image URL</label>
           <input type="url" ng-model="adminCtrl.profile.portimg3" required>
+        </div>
+        <div class="form-group">
+          <label for="">Portfolio Image URL</label>
           <input type="url" ng-model="adminCtrl.profile.portimg4" required>
+        </div>
+        <div class="form-group">
+          <label for="">Portfolio Image URL</label>
           <input type="url" ng-model="adminCtrl.profile.portimg5" required>
+        </div>
+        <div class="form-group">
+          <label for="">Portfolio Image URL</label>
           <input type="url" ng-model="adminCtrl.profile.portimg6" required>
         </div>
-        <button type="submit" class="btn btn-default pull-right">Submit Portfolio Edits</button>
+        <button type="submit" class="btn btn-default pull-right"><i class="fa fa-floppy-o fa-fw fa-lg"></i></button>
       </form>
     </div>
   </div>

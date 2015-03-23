@@ -5,7 +5,10 @@
       <img src="images/shampoodle-logo-white.png">
     </a>
   </div>
-  <nav class="col-md-5 col-md-offset-3 nav-effect">
+  <nav class="col-md-6 col-md-offset-2 nav-effect nav-admin">
+    <a href="#/adminlist">
+      Admin
+    </a>
     <a href="#/#about">
       About
     </a>
@@ -42,14 +45,14 @@
       <img src="{{profile.mainimg}}">
     </div>
       <div class="col-md-2 list-item">
-        <p>{{profile.name}}</p>
+        <h4>{{profile.name}}</h4>
         <p><a href="{{profile.companyURL}}" target="_blank">{{profile.company}}</a></p>
         <p>{{profile.address}}</p>
         <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
         <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
         <p><a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
       </div>
-      <div class="col-md-3 list-item">
+      <div class="col-md-3 list-item buttons">
         <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
           <i class="fa fa-trash-o fa-fw fa-lg"></i>
         </button>

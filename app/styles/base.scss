@@ -1,6 +1,8 @@
-/* background: linear-gradient(rgba(64, 64, 64, 0.4), rgba(64, 64, 64, 0.4)), url('/images/EhYKSby.png'); */
 $image-text: #FFFFFF;
+$main-text: #000000;
+$bs-text: #333333;
 $secondary-color: #BFBDB1;
+$font: 'Arimo', sans-serif;
 
 @mixin full-images($url) {
   background: url($url) no-repeat center center fixed;
@@ -30,6 +32,14 @@ project in a nav bar.
 @media screen and (min-width: 320px) {
   body {
     background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    font-family: $font;
+    color: $main-text;
+    a {
+      color: $main-text;
+    }
+    a:hover, a:active, a:focus {
+      color: $bs-text;
+    }
   }
 
   .header-img {
@@ -48,6 +58,29 @@ project in a nav bar.
     margin-top: 45vh;
     color: $image-text;
     text-align: center;
+  }
+
+  .about-section {
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    border: 2px solid $image-text;
+    border-radius: 5px;
+  }
+
+  .home-create button {
+    margin-top: 5vh;
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    border: 2px solid $image-text;
+    color: $main-text;
+  }
+
+  .home-create a:focus, .home-create a:active, .home-create a:hover {
+    text-decoration: none;
+  }
+
+  .home-create button:focus, .home-create button:active, .home-create button:hover {
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    border: 2px solid $image-text;
+    color: $image-text;
   }
 
   .admin-img {
@@ -140,7 +173,7 @@ project in a nav bar.
   .nav-map a:nth-child(2)::before {
     opacity: 1;
   	top: 0;
-  	left: 24%;
+  	left: 23.5%;
     -webkit-transform: rotate(0deg);
   	-moz-transform: rotate(0deg);
   	transform: rotate(0deg);
@@ -148,7 +181,7 @@ project in a nav bar.
 
   .nav-map a:nth-child(2)::after {
     opacity: 1;
-  	right: 26%;
+  	right: 23%;
   	bottom: 0;
     -webkit-transform: rotate(0deg);
   	-moz-transform: rotate(0deg);
@@ -158,7 +191,7 @@ project in a nav bar.
   .nav-portfolios a:nth-child(3)::before {
     opacity: 1;
 	  top: 0;
-	  left: 39%;
+	  left: 37%;
     -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
 	  transform: rotate(0deg);
@@ -171,6 +204,24 @@ project in a nav bar.
     -webkit-transform: rotate(0deg);
 	  -moz-transform: rotate(0deg);
 	  transform: rotate(0deg);
+  }
+
+  .nav-admin a:nth-child(1)::before {
+    opacity: 1;
+	  top: 0;
+	  left: 28.5%;
+    -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  transform: rotate(0deg);
+  }
+
+  .nav-admin a:nth-child(1)::after {
+    opacity: 1;
+    right: 29%;
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   .foot-top {
@@ -238,8 +289,9 @@ and modified for this project
   .angular-google-map-container {
     margin-top: 0;
     height: 70vh;
+    border: solid 1px $image-text;
     border-radius:10px;
-    @include box-shadow;
+    box-shadow: 0 0 7px -2px #000;
   }
 
   .home-logo {
@@ -268,16 +320,11 @@ and modified for this project
     margin-top: 20vh;
   }
 
-  .home-create {
-    margin-top: 5vh;
-  }
-
   .list-item {
-    margin-top: 10vh;
+    margin-top: 5vh;
     img {
       display: inline;
       width: 100%;
-      @include box-shadow;
     }
     button {
       margin-top: 2vh;
@@ -286,14 +333,16 @@ and modified for this project
 
   .buttons button {
     background: transparent;
-    border: solid 1px $image-text;
+    border: 1px solid $image-text;
+    color: $main-text;
   }
 
   .buttons button:hover,
   .buttons button:active,
   .buttons button:focus {
     background: #BFBDB1;
-    border: solid 1px $image-text;
+    border: 1px solid $image-text;
+    color: $main-text;
   }
 
   .portfolio {
@@ -307,7 +356,7 @@ and modified for this project
   .portfolio-bio {
     margin-top: 5vh;
     background: transparent;
-    border: solid 1px white;
+    border: 1px solid $image-text;
     border-radius: 3px;
   }
 
@@ -327,10 +376,6 @@ and modified for this project
 
   .paw-review {
     width: 20%;
-    text-align: right;
-  }
-
-  .list-paw {
     text-align: right;
   }
 

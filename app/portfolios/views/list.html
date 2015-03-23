@@ -45,18 +45,20 @@
   </div>
   <div class="row" ng-repeat="profile in portCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
     <div ng-show="profile.approved">
-    <div class="col-md-3 col-md-offset-2 list-item polaroid">
+    <div class="col-md-3 col-md-offset-3 list-item polaroid">
       <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
     </div>
-    <div class="col-md-4 list-item">
-      <p>{{profile.name}}</p>
-      <p><a href="{{profile.companyURL}}" target="_blank">{{profile.company}}</a></p>
-      <p>{{profile.address}}</p>
-      <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
+    <div class="col-md-2 list-item">
+      <h4>{{profile.name}}</h4>
+      <address>
+        <strong>{{profile.company}}</strong><br>
+        {{profile.address}}<br>
+        {{profile.city}}, {{profile.state}} {{profile.zip}}<br>
+      </address>
       <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
       <p><a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
     </div>
-    <div class="col-md-2 list-item list-paw">
+    <div class="col-md-2 col-md-offset-1 list-item">
       <h4><i ng-repeat="i in portCtrl.getNumber(profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h4>
     </div>
   </div>

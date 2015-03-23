@@ -1,4 +1,3 @@
-/* background: linear-gradient(rgba(64, 64, 64, 0.4), rgba(64, 64, 64, 0.4)), url('/images/EhYKSby.png'); */
 /*************************************************************
 Navigation link effects found on Codrops at
 http://tympanus.net/codrops/2013/08/06/creative-link-effects/
@@ -10,7 +9,13 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png"); }
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    font-family: "Arimo", sans-serif;
+    color: #000000; }
+    body a {
+      color: #000000; }
+    body a:hover, body a:active, body a:focus {
+      color: #333333; }
 
   .header-img {
     background: url("../images/homepg1920.jpg") no-repeat center center fixed;
@@ -40,6 +45,25 @@ project in a nav bar.
     margin-top: 45vh;
     color: #FFFFFF;
     text-align: center; }
+
+  .about-section {
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    border: 2px solid #FFFFFF;
+    border-radius: 5px; }
+
+  .home-create button {
+    margin-top: 5vh;
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    border: 2px solid #FFFFFF;
+    color: #000000; }
+
+  .home-create a:focus, .home-create a:active, .home-create a:hover {
+    text-decoration: none; }
+
+  .home-create button:focus, .home-create button:active, .home-create button:hover {
+    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF; }
 
   .admin-img {
     background: url("../images/admin1920.jpg") no-repeat center center fixed;
@@ -127,14 +151,14 @@ project in a nav bar.
   .nav-map a:nth-child(2)::before {
     opacity: 1;
     top: 0;
-    left: 24%;
+    left: 23.5%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
 
   .nav-map a:nth-child(2)::after {
     opacity: 1;
-    right: 26%;
+    right: 23%;
     bottom: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -143,7 +167,7 @@ project in a nav bar.
   .nav-portfolios a:nth-child(3)::before {
     opacity: 1;
     top: 0;
-    left: 39%;
+    left: 37%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg); }
@@ -151,6 +175,22 @@ project in a nav bar.
   .nav-portfolios a:nth-child(3)::after {
     opacity: 1;
     right: 37%;
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  .nav-admin a:nth-child(1)::before {
+    opacity: 1;
+    top: 0;
+    left: 28.5%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  .nav-admin a:nth-child(1)::after {
+    opacity: 1;
+    right: 29%;
     bottom: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -214,10 +254,9 @@ project in a nav bar.
   .angular-google-map-container {
     margin-top: 0;
     height: 70vh;
+    border: solid 1px #FFFFFF;
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0 0 7px -2px #000; }
 
   .home-logo {
     margin-top: 20vh; }
@@ -238,29 +277,25 @@ project in a nav bar.
   .home-about {
     margin-top: 20vh; }
 
-  .home-create {
-    margin-top: 5vh; }
-
   .list-item {
-    margin-top: 10vh; }
+    margin-top: 5vh; }
     .list-item img {
       display: inline;
-      width: 100%;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+      width: 100%; }
     .list-item button {
       margin-top: 2vh; }
 
   .buttons button {
     background: transparent;
-    border: solid 1px #FFFFFF; }
+    border: 1px solid #FFFFFF;
+    color: #000000; }
 
   .buttons button:hover,
   .buttons button:active,
   .buttons button:focus {
     background: #BFBDB1;
-    border: solid 1px #FFFFFF; }
+    border: 1px solid #FFFFFF;
+    color: #000000; }
 
   .portfolio {
     margin-top: 10vh; }
@@ -273,7 +308,7 @@ project in a nav bar.
   .portfolio-bio {
     margin-top: 5vh;
     background: transparent;
-    border: solid 1px white;
+    border: 1px solid #FFFFFF;
     border-radius: 3px; }
 
   .reviews p {
@@ -289,9 +324,6 @@ project in a nav bar.
 
   .paw-review {
     width: 20%;
-    text-align: right; }
-
-  .list-paw {
     text-align: right; }
 
   .new-groomer {
