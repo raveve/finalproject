@@ -41,16 +41,19 @@
     </div>
   </div>
   <div class="row" ng-repeat="profile in adminCtrl.profiles | filter:searchTerm | orderBy: 'name' | orderBy:predicate:reverse">
-    <div class="col-md-3 col-md-offset-2 list-item buttons polaroid">
+    <div class="col-md-8 col-md-offset-2 list-bottom">
+    <div class="col-md-3 list-item buttons polaroid list-polaroid">
       <img src="{{profile.mainimg}}">
     </div>
-      <div class="col-md-2 list-item">
+      <div class="col-md-4 col-md-offset-2 list-item">
         <h4>{{profile.name}}</h4>
-        <p><a href="{{profile.companyURL}}" target="_blank">{{profile.company}}</a></p>
-        <p>{{profile.address}}</p>
-        <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
-        <p><a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
-        <p><a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
+        <address>
+          <strong><i class="fa fa-building-o fa-fw"></i> {{profile.company}}</strong><br>
+          {{profile.address}}<br>
+          {{profile.city}}, {{profile.state}} {{profile.zip}}<br>
+        </address>
+        <p><i class="fa fa-phone fa-fw"></i> <a href="tel:{{profile.phone}}">{{profile.phone}}</a></p>
+        <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
       </div>
       <div class="col-md-3 list-item buttons">
         <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
@@ -65,5 +68,6 @@
           <i class="fa fa-thumbs-o-up fa-fw fa-lg"></i>
         </button>
       </div>
+    </div>
   </div>
 </div>

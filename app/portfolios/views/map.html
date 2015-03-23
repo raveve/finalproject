@@ -31,13 +31,18 @@
       <div ng-repeat="profile in portCtrl.profiles | filter:searchTerm">
         <ui-gmap-marker idKey="profile._id" coords="profile.coords" icon="icon">
           <ui-gmap-window options="windowOptions" closeClick="closeClick()">
-            <div class="map-window polaroid">
-              <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}" alt=""></a>
-              <div class="map-groomer-detail">
-                <p>{{profile.name}}</p>
-                <p>{{profile.company}}</p>
-                <p>{{profile.address}}</p>
-                <p>{{profile.city}}, {{profile.state}} {{profile.zip}}</p>
+            <div class="map-window">
+              <div class="map-img">
+                <a href="#/portfolio/{{profile._id}}"><img src="{{profile.mainimg}}"></a>
+                <h5><i ng-repeat="i in adminCtrl.getNumber(profile.avgpaws) track by $index" class="fa fa-paw fa-2x fa-fw"></i></h5>
+              </div>
+              <div class="map-detail center-block">
+                <h5>{{profile.name}}</h5>
+                <address>
+                  {{profile.company}}<br>
+                  {{profile.address}}<br>
+                  {{profile.city}}, {{profile.state}} {{profile.zip}}<br>
+                </address>
               </div>
             </div>
           </ui-gmap-window>

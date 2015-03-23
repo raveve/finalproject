@@ -2,6 +2,7 @@ $image-text: #FFFFFF;
 $main-text: #000000;
 $bs-text: #333333;
 $secondary-color: #BFBDB1;
+$complimentary-color: #646247;
 $font: 'Arimo', sans-serif;
 
 @mixin full-images($url) {
@@ -81,6 +82,10 @@ project in a nav bar.
     background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
     border: 2px solid $image-text;
     color: $image-text;
+  }
+
+ .bottom-button {
+    margin-bottom: 50px;
   }
 
   .admin-img {
@@ -234,6 +239,14 @@ project in a nav bar.
     }
   }
 
+  .list-polaroid {
+    margin-bottom: 5vh;
+  }
+
+  .list-bottom {
+    border-bottom: 1px solid $image-text;
+  }
+
 /*************************************
 Polaroid image inspiration from:
 http://codepen.io/andrewboyd/pen/bxwyG
@@ -383,6 +396,26 @@ and modified for this project
     margin-top: 1vh;
   }
 
+  .map-window {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .map-img {
+    display: inline-block;
+    img {
+      max-width: 150px;
+      max-height: 100px;
+    }
+  }
+
+  .map-detail {
+    display: inline-block;
+    max-width: 125px;
+    margin-left: 1%;
+  }
+
 /********************************************************
   RECTANGLE-BORDER STYLE BUBBLE WITH CURVE
   Modified from the version by Nicolas Gallagher on
@@ -482,7 +515,7 @@ and modified for this project
     border-radius: 3px;
     height: 1.5em;
     padding: 2px 5px 2px 5px;
-    color: $secondary-color;
+    color: $complimentary-color;
   }
 
   .new-profile-form input,

@@ -77,6 +77,11 @@
          },
            zoom: 12
        };
+
+       adminCtrl.getNumber = function(num) {
+         var convertedNum = Number(num);
+         return new Array(convertedNum);
+       };
     });
 
 })();
