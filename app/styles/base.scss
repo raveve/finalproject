@@ -1,8 +1,8 @@
 $image-text: #FFFFFF;
 $main-text: #000000;
 $bs-text: #333333;
-$secondary-color: #BFBDB1;
-$complimentary-color: #646247;
+$secondary-color: #A0A0A0;
+$complimentary-color: #404040;
 $font: 'Arimo', sans-serif;
 
 @mixin full-images($url) {
@@ -32,7 +32,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    background: linear-gradient(rgba(160,160,160, 0.6), rgba(160,160,160, 0.6)), url('../images/graydogs.png');
     font-family: $font;
     color: $main-text;
     a {
@@ -44,15 +44,15 @@ project in a nav bar.
   }
 
   .header-img {
-    @include full-images('../images/homepg1920.jpg');
+    @include full-images('../images/soap-bubbles-672658_1920.jpg');
   }
 
   .about-img {
-    @include full-images('../images/homemap600.jpg');
+    @include full-images('../images/about1920.jpg');
   }
 
   .notfound-img {
-    @include full-images('../images/404img1920.jpg')
+    @include full-images('../images/404img1920.jpg');
   }
 
   .notfound-text {
@@ -62,14 +62,14 @@ project in a nav bar.
   }
 
   .about-section {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    background: linear-gradient(rgba(160,160,160, 0.6), rgba(160,160,160, 0.6)), url('../images/graydogs.png');
     border: 2px solid $image-text;
     border-radius: 10px;
   }
 
   .home-create button {
     margin-top: 5vh;
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    background: linear-gradient(rgba(160,160,160, 0.6), rgba(160,160,160, 0.6)), url('../images/graydogs.png');
     border: 2px solid $image-text;
     color: $main-text;
   }
@@ -79,7 +79,7 @@ project in a nav bar.
   }
 
   .home-create button:focus, .home-create button:active, .home-create button:hover {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url('../images/graydogs.png');
+    background: linear-gradient(rgba(160,160,160, 0.6), rgba(160,160,160, 0.6)), url('../images/graydogs.png');
     border: 2px solid $image-text;
     color: $image-text;
   }
@@ -90,6 +90,13 @@ project in a nav bar.
 
   .admin-img {
     @include full-images('../images/admin1920.jpg')
+  }
+
+  .admin-text {
+    color: $image-text;
+    input {
+      color: $image-text;
+    }
   }
 
   nav a {
@@ -330,7 +337,7 @@ and modified for this project
   }
 
   .home-logo {
-    margin-top: 20vh;
+    margin-top: 10vh;
     img {
       width: 80%;
     }
@@ -342,6 +349,18 @@ and modified for this project
       width: 100%;
     }
   }
+
+/*   nav {
+  background: linear-gradient(rgba(191, 189, 177, 0.5), rgba(191, 189, 177, 0.5));
+  border-radius: 5px;
+} */
+
+/*   nav:before {
+  content: "";
+  position: fixed;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+} */
 
   .admin-login {
     margin-top: 15vh;
@@ -375,7 +394,7 @@ and modified for this project
   .buttons button:hover,
   .buttons button:active,
   .buttons button:focus {
-    background: #BFBDB1;
+    background: $secondary-color;
     border: 1px solid $image-text;
     color: $main-text;
   }
@@ -614,7 +633,7 @@ and modified for this project
 *******************************/
 @media screen and (min-width: 640px) {
   .about-img {
-    @include full-images('../images/homemap800.jpg');
+    @include full-images('../images/about1920.jpg');
   }
 
   .home-logo {
@@ -663,12 +682,12 @@ and modified for this project
 *******************************/
 @media screen and (min-width: 992px) {
   .about-img {
-    @include full-images('../images/homemap1280.jpg');
+    @include full-images('../images/about1920.jpg');
   }
 
   .home-logo {
     img {
-      width: 50%;
+      width: 45%;
     }
   }
 
@@ -697,7 +716,7 @@ and modified for this project
 *******************************/
 @media screen and (min-width: 1280px) {
   .about-img {
-    @include full-images('../images/homemap1920.jpg');
+    @include full-images('../images/about1920.jpg');
   }
 
 }

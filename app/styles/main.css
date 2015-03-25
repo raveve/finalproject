@@ -9,7 +9,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 320px) {
   body {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(160, 160, 160, 0.6), rgba(160, 160, 160, 0.6)), url("../images/graydogs.png");
     font-family: "Arimo", sans-serif;
     color: #000000; }
     body a {
@@ -18,7 +18,7 @@ project in a nav bar.
       color: #333333; }
 
   .header-img {
-    background: url("../images/homepg1920.jpg") no-repeat center center fixed;
+    background: url("../images/soap-bubbles-672658_1920.jpg") no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -26,7 +26,7 @@ project in a nav bar.
     background-size: cover; }
 
   .about-img {
-    background: url("../images/homemap600.jpg") no-repeat center center fixed;
+    background: url("../images/about1920.jpg") no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -47,13 +47,13 @@ project in a nav bar.
     text-align: center; }
 
   .about-section {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(160, 160, 160, 0.6), rgba(160, 160, 160, 0.6)), url("../images/graydogs.png");
     border: 2px solid #FFFFFF;
     border-radius: 10px; }
 
   .home-create button {
     margin-top: 5vh;
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(160, 160, 160, 0.6), rgba(160, 160, 160, 0.6)), url("../images/graydogs.png");
     border: 2px solid #FFFFFF;
     color: #000000; }
 
@@ -61,7 +61,7 @@ project in a nav bar.
     text-decoration: none; }
 
   .home-create button:focus, .home-create button:active, .home-create button:hover {
-    background: linear-gradient(rgba(191, 189, 177, 0.6), rgba(191, 189, 177, 0.6)), url("../images/graydogs.png");
+    background: linear-gradient(rgba(160, 160, 160, 0.6), rgba(160, 160, 160, 0.6)), url("../images/graydogs.png");
     border: 2px solid #FFFFFF;
     color: #FFFFFF; }
 
@@ -75,6 +75,11 @@ project in a nav bar.
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
+
+  .admin-text {
+    color: #FFFFFF; }
+    .admin-text input {
+      color: #FFFFFF; }
 
   nav a {
     position: relative;
@@ -285,7 +290,7 @@ project in a nav bar.
     box-shadow: 0 0 7px -2px #000; }
 
   .home-logo {
-    margin-top: 20vh; }
+    margin-top: 10vh; }
     .home-logo img {
       width: 80%; }
 
@@ -294,6 +299,16 @@ project in a nav bar.
     .nav-logo img {
       width: 100%; }
 
+  /*   nav {
+    background: linear-gradient(rgba(191, 189, 177, 0.5), rgba(191, 189, 177, 0.5));
+    border-radius: 5px;
+  } */
+  /*   nav:before {
+    content: "";
+    position: fixed;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  } */
   .admin-login {
     margin-top: 15vh; }
 
@@ -319,7 +334,7 @@ project in a nav bar.
   .buttons button:hover,
   .buttons button:active,
   .buttons button:focus {
-    background: #BFBDB1;
+    background: #A0A0A0;
     border: 1px solid #FFFFFF;
     color: #000000; }
 
@@ -385,9 +400,9 @@ project in a nav bar.
     position: relative;
     padding: 30px 10px;
     margin: 1em 0 3em;
-    border: 10px solid #BFBDB1;
+    border: 10px solid #A0A0A0;
     color: #000;
-    background: #BFBDB1;
+    background: #A0A0A0;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px; }
@@ -403,7 +418,7 @@ project in a nav bar.
     height: 30px;
     border-style: solid;
     border-width: 0 30px 10px 0;
-    border-color: #BFBDB1;
+    border-color: #A0A0A0;
     background: transparent;
     -webkit-border-bottom-right-radius: 80px 50px;
     -moz-border-radius-bottomright: 80px 50px;
@@ -420,7 +435,7 @@ project in a nav bar.
     height: 30px;
     border-style: solid;
     border-width: 0 10px 10px 0;
-    border-color: #BFBDB1;
+    border-color: #A0A0A0;
     -webkit-border-bottom-right-radius: 40px 50px;
     -moz-border-radius-bottomright: 40px 50px;
     border-bottom-right-radius: 40px 50px;
@@ -434,7 +449,7 @@ project in a nav bar.
     left: 45px;
     width: 8px;
     height: 10px;
-    background: #BFBDB1;
+    background: #A0A0A0;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 5px; }
@@ -466,7 +481,7 @@ project in a nav bar.
     border-radius: 3px;
     height: 1.5em;
     padding: 2px 5px 2px 5px;
-    color: #646247; }
+    color: #404040; }
 
   .new-profile-form input,
   .new-profile-form textarea {
@@ -484,7 +499,7 @@ project in a nav bar.
     padding: 0; }
 
   .new-profile-form .form-group > span {
-    background: #BFBDB1;
+    background: #A0A0A0;
     display: block;
     padding: 3px;
     margin: 0 -9px -9px -9px;
@@ -517,7 +532,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 640px) {
   .about-img {
-    background: url("../images/homemap800.jpg") no-repeat center center fixed;
+    background: url("../images/about1920.jpg") no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -555,7 +570,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 992px) {
   .about-img {
-    background: url("../images/homemap1280.jpg") no-repeat center center fixed;
+    background: url("../images/about1920.jpg") no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -563,7 +578,7 @@ project in a nav bar.
     background-size: cover; }
 
   .home-logo img {
-    width: 50%; }
+    width: 45%; }
 
   .foot-top {
     margin-top: 25vh; }
@@ -581,7 +596,7 @@ project in a nav bar.
 *******************************/
 @media screen and (min-width: 1280px) {
   .about-img {
-    background: url("../images/homemap1920.jpg") no-repeat center center fixed;
+    background: url("../images/about1920.jpg") no-repeat center center fixed;
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
