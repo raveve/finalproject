@@ -307,7 +307,7 @@ and modified for this project
   .new-groomer {
     margin-top: 1vh; }
   .map-window {
-    width: 250px;
+    width: 300px;
     height: 150px;
     margin: 0 auto; }
   .map-img {
@@ -315,7 +315,7 @@ and modified for this project
     .map-img img {
       margin-left: 15px;
       margin-bottom: 65px;
-      max-width: 120px;
+      max-width: 100px;
       max-height: 100px; }
   .map-detail {
     display: inline-block;
