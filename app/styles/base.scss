@@ -56,7 +56,7 @@ project in a nav bar.
   }
 
   .notfound-text {
-    margin-top: 45vh;
+    margin-top: 30vh;
     color: $image-text;
     text-align: center;
   }
@@ -339,7 +339,7 @@ and modified for this project
   .home-logo {
     margin-top: 10vh;
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -409,7 +409,7 @@ and modified for this project
 
   .review-title {
     margin-left: 2%;
-    width: 75%
+    width: 65%
   }
 
   .reviews h4 {
@@ -417,8 +417,7 @@ and modified for this project
   }
 
   .paw-review {
-    width: 100%;
-    text-align: right;
+    width: 30%;
   }
 
   .new-groomer {
@@ -652,6 +651,10 @@ and modified for this project
   .portfolio-bio {
     margin-top: 70vh;
   }
+
+  .notfound-text {
+    margin-top: 40vh;
+  }
 }
 
 /*******************************
@@ -666,6 +669,10 @@ and modified for this project
   .portfolio {
     margin-top: 10vh;
   }
+
+  .notfound-text {
+    margin-top: 50vh;
+  }
 }
 
 /*******************************
@@ -676,18 +683,12 @@ and modified for this project
     @include full-images('../images/about1920.jpg');
   }
 
-  .home-logo {
-    img {
-      width: 45%;
-    }
+  .home-logo img {
+    width: 50%;
   }
 
   .foot-top {
     margin-top: 25vh;
-  }
-
-  .paw-review {
-    width: 20%;
   }
 
   .portfolio-bio {
