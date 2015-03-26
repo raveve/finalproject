@@ -392,6 +392,7 @@ and modified for this project
   }
 
   .portfolio-bio {
+    margin-top: 68vh;
     border-top: 1px solid $image-text;
     border-bottom: 1px solid $image-text;
       h3 {
@@ -550,6 +551,7 @@ and modified for this project
   }
 
   .new-profile-form input,
+  .new-profile-form select,
   .new-profile-form textarea
   {
     box-sizing: border-box;
@@ -564,6 +566,7 @@ and modified for this project
     line-height: 25px;
     font-size: 16px;
     padding: 0;
+    color: $main-text;
   }
 
   .new-profile-form .form-group > span {
@@ -581,6 +584,13 @@ and modified for this project
     height: 10vh;
   }
 
+  .new-profile-form select:focus,
+  .new-profile form select:active,
+  .new-profileform select:hover {
+    outline: none;
+    box-shadow:none !important;
+  }
+
   .list-search {
     margin-top: 0;
     margin-bottom: 0;
@@ -595,27 +605,6 @@ and modified for this project
   }
 
 }
-
-/*******************************
-338PX RESPONSIVE MEDIA QUERY
-*******************************/
-
-@media screen and (min-width: 338px) {
-  .portfolio-bio {
-    margin-top: 50vh;
-  }
-}
-
-/*******************************
-448PX RESPONSIVE MEDIA QUERY
-*******************************/
-
-@media screen and (min-width: 448px) {
-  .portfolio-bio {
-    margin-top: 60vh;
-  }
-}
-
 
 
 /*******************************
@@ -663,7 +652,7 @@ and modified for this project
 
 @media screen and (min-width: 768px) {
   .portfolio-bio {
-    margin-top: 30vh;
+    margin-top: 40vh;
   }
 
   .portfolio {
@@ -695,12 +684,6 @@ and modified for this project
     margin-top: 10vh;
   }
 
-}
-
-/*******************************
-1280PX RESPONSIVE MEDIA QUERY
-*******************************/
-@media screen and (min-width: 1280px) {
 }
 
 /*******************************
