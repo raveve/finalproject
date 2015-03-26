@@ -25,7 +25,6 @@
 
       var deleteGroomerProfile = function(id) {
         $http.delete("api/collections/shampoodle/" + id);
-          $rootScope.$broadcast("groomer:deleted");
       }
 
       var editGroomerProfile = function(profile) {

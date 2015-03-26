@@ -58,8 +58,11 @@
           AdminService.approveGroomer(profile);
         }
 
-        adminCtrl.deleteGroomer = function (id) {
-          AdminService.deleteGroomer(id);
+        adminCtrl.deleteGroomer = function (profile) {
+          var idx = _.indexOf(adminCtrl.profiles, profile);
+          console.log(idx);
+          adminCtrl.profiles.splice(idx, 1);
+          AdminService.deleteGroomer(profile._id);
         };
 
         adminCtrl.editGroomer = function (profile) {

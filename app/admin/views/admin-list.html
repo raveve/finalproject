@@ -56,7 +56,7 @@
         <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{profile.email}}" target="_blank">{{profile.email}}</a></p>
       </div>
       <div class="col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-1 list-item buttons admin-btn-mobile">
-        <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile._id)">
+        <button class="btn btn-default" ng-click="adminCtrl.deleteGroomer(profile)">
           <i class="fa fa-trash-o fa-fw fa-lg"></i>
         </button>
         <a href="#/edit/{{profile._id}}">
