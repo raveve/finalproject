@@ -51,6 +51,7 @@
             reviews: []
           });
           $scope.newProfile = {};
+          $location.path('/');
         };
 
         adminCtrl.approveGroomer = function (profile) {
